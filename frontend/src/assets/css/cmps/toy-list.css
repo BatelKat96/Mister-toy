@@ -1,0 +1,30 @@
+.toys-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 11px;
+    border: 2px black solid;
+    padding: 15px;
+    height: 300px;
+    justify-content: space-between;
+
+
+}
+
+.preview-img {
+    height: 145px;
+}
+
+.preview-img img {
+    object-fit: contain;
+}
+
+.out-stock {
+    color: rgb(177, 54, 54);
+    font-weight: bold;
+}

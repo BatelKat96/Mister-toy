@@ -1,0 +1,31 @@
+header {
+    background: rgb(117, 56, 97);
+    border-bottom: 2px solid white;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.app-header h3 {
+    font-family: Lato;
+}
+
+nav a {
+    margin: .5em;
+}
+
+nav a:active {
+    color: rgb(255, 159, 223);
+}
+
+nav a.active {
+    color: rgb(255, 159, 223);
+    font-weight: bold;
+    text-decoration: underline;
+}

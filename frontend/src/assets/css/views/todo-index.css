@@ -1,0 +1,11 @@
+.todo-index-section {
+    flex-grow: 1;
+}
+
+.todo-feature-section {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -1px 1px 4px 0px #c2c3c3;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
