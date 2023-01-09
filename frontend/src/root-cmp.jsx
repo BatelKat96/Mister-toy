@@ -8,6 +8,7 @@ import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import { HomePage } from './pages/home-page';
 import { ToyIndex } from './pages/toy-index';
 import { store } from './store/store';
+import { ToysDetails } from './pages/todo-details';
 
 export function App() {
   return (
@@ -20,7 +21,7 @@ export function App() {
               <Route path="/toy" element={<ToyIndex />} />
               <Route path="/" element={<HomePage />} />
               {/* <Route element={<AboutUs />} path="/about" /> */}
-              {/* <Route element={<ToyDetails />} path="/toy/:toyId" /> */}
+              <Route element={<ToysDetails />} path="/toy/:toyId" />
               {/* <Route element={<ToyEdit />} path="/toy/edit/:toyId" /> */}
 
             </Routes>

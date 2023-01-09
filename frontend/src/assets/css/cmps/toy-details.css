@@ -1,0 +1,7 @@
+.details-img {
+    height: 40vh;
+}
+
+.details-img img {
+    object-fit: contain;
+}

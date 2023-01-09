@@ -9,6 +9,8 @@ _createToys()
 
 export const toyService = {
     query,
+    remove,
+    getById
 }
 
 function query(filterBy = getDefaultFilter()) {
@@ -23,6 +25,13 @@ function query(filterBy = getDefaultFilter()) {
             // }
             return toys
         })
+}
+
+function remove(toyId) {
+    return storageService.remove(STORAGE_TOYS_KEY, toyId)
+}
+function getById(toyId) {
+    return storageService.get(STORAGE_TOYS_KEY, toyId)
 }
 
 function getEmptyToy(toyName, price, labels, inStock = true) {

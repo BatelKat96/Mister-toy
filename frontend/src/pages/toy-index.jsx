@@ -18,6 +18,8 @@ export function ToyIndex() {
 
 
     function onRemoveToy(toyId) {
+        console.log('toyId from index:', toyId)
+
         removeToy(toyId)
             .then(() => {
                 showSuccessMsg('Toy removed')

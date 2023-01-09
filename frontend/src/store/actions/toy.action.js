@@ -20,6 +20,8 @@ export function loadToys(filterBy) {
 
 
 export function removeToy(toyId) {
+    console.log('toyId from action:', toyId)
+
     return toyService.remove(toyId)
         .then(() => {
             store.dispatch({ type: REMOVE_TOY, toyId })
