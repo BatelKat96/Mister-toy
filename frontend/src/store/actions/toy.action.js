@@ -1,5 +1,5 @@
 import { toyService } from '../../services/toy-service';
-import { REMOVE_TOY, SET_FILTER, SET_IS_LOADING, SET_TOYS } from '../reducers/toy.reducer';
+import { ADD_TOY, REMOVE_TOY, SET_FILTER, SET_IS_LOADING, SET_TOYS, UPDATE_TOY } from '../reducers/toy.reducer';
 import { store } from '../store';
 
 
@@ -31,6 +31,27 @@ export function removeToy(toyId) {
             throw err
         })
 }
+
+
+
+export function saveToy(toy) {
+    console.log('toy from action:', toy)
+
+    const type = (toy._id) ? UPDATE_TOY : ADD_TOY
+    return toyService.save(toy)
+        .then(savedToy => {
+            console.log('savedToy:', savedToy)
+
+            store.dispatch({ type, toy: savedToy })
+            console.log('seved:')
+            return savedToy
+        })
+        .catch(err => {
+            console.error('Cannot save todo:', err)
+            throw err
+        })
+}
+
 
 export function setFilter(filter) {
     return Promise.resolve(store.dispatch({ type: SET_FILTER, filter }))

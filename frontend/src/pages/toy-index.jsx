@@ -35,7 +35,7 @@ export function ToyIndex() {
 
     return <section>
         <h1>Toy store</h1>
-
+        {isLoading && <p>Loading...</p>}
         <ToyList
             toys={toys}
             onRemoveToy={onRemoveToy}

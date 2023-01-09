@@ -5,3 +5,13 @@
 .details-img img {
     object-fit: contain;
 }
+
+.labels-headline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.labels-li {
+    margin-top: 7px;
+    margin-inline-start: 40px;
+}

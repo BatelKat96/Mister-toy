@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
 
@@ -11,6 +11,7 @@ export function ToysDetails() {
 
     const [toy, setToy] = useState(null)
     const { toyId } = useParams()
+    const navigate = useNavigate()
 
     useEffect(() => {
         toyService.getById(toyId)
@@ -19,6 +20,7 @@ export function ToysDetails() {
             })
             .catch(err => {
                 showErrorMsg('Cannot load toy')
+                navigate('/toy')
             })
     }, [])
 
@@ -39,7 +41,9 @@ export function ToysDetails() {
 
         </div>
         <p>Desciption: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ducimus sit ipsa mollitia sed ipsum odit? Distinctio reiciendis quo cupiditate neque at, itaque ducimus quod voluptates dignissimos adipisci beatae deleniti?</p>
-        {toy.labels.map(label => <p key={`${toy._id} + ${label}`}>{label}</p>)}
+        <ul><span className='labels-headline'>Labels:</span>
+            {toy.labels.map(label => <li className='labels-li' key={`${toy._id} + ${label}`}>{label}</li>)}
+        </ul>
         <div className='btn-back'>
             <Link to="/toy" className="btn">Back to List</Link>
         </div>

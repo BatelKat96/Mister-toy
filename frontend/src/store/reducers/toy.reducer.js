@@ -2,6 +2,8 @@ export const SET_TOYS = 'SET_TOYS'
 export const SET_IS_LOADING = 'SET_IS_LOADING'
 export const SET_FILTER = 'SET_FILTER'
 export const REMOVE_TOY = 'REMOVE_TOY'
+export const UPDATE_TOY = 'UPDATE_TOY'
+export const ADD_TOY = 'ADD_TOY'
 
 
 const initialState = {
@@ -24,6 +26,13 @@ export function toyReducer(state = initialState, action) {
 
         case REMOVE_TOY:
             toys = state.toys.filter(c => c._id !== action.toyId)
+            return { ...state, toys }
+
+        case ADD_TOY:
+            toys = [...state.toys, action.toy]
+            return { ...state, toys }
+        case UPDATE_TOY:
+            toys = state.toys.map(toy => toy._id === action.toy._id ? action.toy : toy)
             return { ...state, toys }
 
         default:

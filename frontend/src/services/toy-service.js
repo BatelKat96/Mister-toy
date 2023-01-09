@@ -10,7 +10,8 @@ _createToys()
 export const toyService = {
     query,
     remove,
-    getById
+    getById,
+    save
 }
 
 function query(filterBy = getDefaultFilter()) {
@@ -32,6 +33,19 @@ function remove(toyId) {
 }
 function getById(toyId) {
     return storageService.get(STORAGE_TOYS_KEY, toyId)
+}
+
+function save(toy) {
+    console.log('toy from service:', toy)
+
+    if (toy._id) {
+        console.log('yes:')
+
+        return storageService.put(STORAGE_TOYS_KEY, toy)
+    } else {
+        // car.owner = userService.getLoggedinUser()
+        return storageService.post(STORAGE_TOYS_KEY, toy)
+    }
 }
 
 function getEmptyToy(toyName, price, labels, inStock = true) {
