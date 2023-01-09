@@ -1,21 +1,33 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { ToyFilter } from '../cmp/toy-filter'
 import { ToyList } from '../cmp/toy-list'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
-import { loadToys, removeToy, setFilter } from '../store/actions/toy.action'
+import { loadToys, removeToy, setFilter, setSort } from '../store/actions/toy.action'
 
 export function ToyIndex() {
 
     const toys = useSelector((storeState) => storeState.toyModule.toys)
     const filterBy = useSelector((storeState) => storeState.toyModule.filterBy)
+    const sortBy = useSelector((storeState) => storeState.todoModule.sortBy)
     const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
-        loadToys(filterBy)
-    }, [filterBy])
+        loadToys(filterBy, sortBy)
+    }, [filterBy, sortBy])
 
+
+    // function onLoadToys(filterBy) {
+    //     loadToys(filterBy)
+    //         .then(() => {
+    //             // showSuccessMsg('Cars loaded')
+    //         })
+    //         .catch(err => {
+    //             showErrorMsg('Cannot load toys')
+    //         })
+    // }
 
     function onRemoveToy(toyId) {
         console.log('toyId from index:', toyId)
@@ -29,13 +41,21 @@ export function ToyIndex() {
             })
     }
 
-    // function onSetFilter(filter) {
-    //     setFilter(filter)
-    // }
+    function onSetFilter(filter) {
+        setFilter(filter)
+    }
+
+    function onSetSort(sort) {
+        setSort(sort)
+    }
 
     return <section>
         <h1>Toy store</h1>
-        {isLoading && <p>Loading...</p>}
+
+
+        <ToyFilter onSetFilter={onSetFilter} onSetSort={onSetSort} />
+        {isLoading && <p className='loading'>Loading...</p>}
+        {/* {isLoading && <span className='loader'></span>} */}
         <ToyList
             toys={toys}
             onRemoveToy={onRemoveToy}

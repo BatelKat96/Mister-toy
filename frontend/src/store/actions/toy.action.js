@@ -1,10 +1,13 @@
 import { toyService } from '../../services/toy-service';
-import { ADD_TOY, REMOVE_TOY, SET_FILTER, SET_IS_LOADING, SET_TOYS, UPDATE_TOY } from '../reducers/toy.reducer';
+import { ADD_TOY, REMOVE_TOY, SET_FILTER, SET_IS_LOADING, SET_SORT, SET_TOYS, UPDATE_TOY } from '../reducers/toy.reducer';
 import { store } from '../store';
 
 
-export function loadToys(filterBy) {
+export function loadToys(filterBy, sortBy) {
     store.dispatch({ type: SET_IS_LOADING, isLoading: true })
+
+    const { filterBy, sortBy } = store.getState().todoModule
+
     return toyService.query(filterBy)
         .then((toys) => {
             store.dispatch({ type: SET_TOYS, toys })
@@ -55,4 +58,8 @@ export function saveToy(toy) {
 
 export function setFilter(filter) {
     return Promise.resolve(store.dispatch({ type: SET_FILTER, filter }))
+}
+
+export function setSort(sort) {
+    store.dispatch({ type: SET_SORT, sort })
 }

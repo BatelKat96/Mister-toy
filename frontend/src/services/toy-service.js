@@ -11,20 +11,29 @@ export const toyService = {
     query,
     remove,
     getById,
-    save
+    save,
+    getDefaultFilter,
+    getDefaultSort
 }
 
-function query(filterBy = getDefaultFilter()) {
+function query(filterBy = getDefaultFilter(), sortBy = getDefaultSort()) {
     return storageService.query(STORAGE_TOYS_KEY)
         .then(toys => {
-            // if (filterBy.txt) {
-            //     const regex = new RegExp(filterBy.txt, 'i')
-            //     cars = cars.filter(car => regex.test(car.vendor))
-            // }
-            // if (filterBy.maxPrice) {
-            //     cars = cars.filter(car => car.price <= filterBy.maxPrice)
-            // }
-            return toys
+            let filterToys = toys
+            if (filterBy.txt) {
+                const regex = new RegExp(filterBy.txt, 'i')
+                filterToys = filterToys.filter(toy => regex.test(toy.toyName))
+            }
+            if (filterBy.maxPrice) {
+                filterToys = filterToys.filter(toy => toy.price <= filterBy.maxPrice)
+            }
+            if (sortBy.txt > 0) {
+                filterToys = filterToys.sort((a, b) => a.toyName.localeCompare(b.toyName))
+            }
+            if (sortBy.txt < 0) {
+                filterToys = filterToys.sort((a, b) => a.toyName.localeCompare(b.toyName))
+            }
+            return filterToys
         })
 }
 
@@ -82,4 +91,8 @@ function _createToy(toyName, price, labels, inStock, imgUrl) {
 
 function getDefaultFilter() {
     return { txt: '', maxPrice: '', inStock: '', label: '' }
+}
+
+function getDefaultSort() {
+    return { txt: '' }
 }
