@@ -5,10 +5,9 @@ import { store } from '../store';
 
 export function loadToys(filterBy, sortBy) {
     store.dispatch({ type: SET_IS_LOADING, isLoading: true })
-
-    const { filterBy, sortBy } = store.getState().todoModule
-
-    return toyService.query(filterBy)
+    console.log('sortBy: from action', sortBy)
+    // const { filterBy, sortBy } = store.getState().todoModule
+    return toyService.query(filterBy, sortBy)
         .then((toys) => {
             store.dispatch({ type: SET_TOYS, toys })
         })
@@ -23,8 +22,6 @@ export function loadToys(filterBy, sortBy) {
 
 
 export function removeToy(toyId) {
-    console.log('toyId from action:', toyId)
-
     return toyService.remove(toyId)
         .then(() => {
             store.dispatch({ type: REMOVE_TOY, toyId })
@@ -38,15 +35,10 @@ export function removeToy(toyId) {
 
 
 export function saveToy(toy) {
-    console.log('toy from action:', toy)
-
     const type = (toy._id) ? UPDATE_TOY : ADD_TOY
     return toyService.save(toy)
         .then(savedToy => {
-            console.log('savedToy:', savedToy)
-
             store.dispatch({ type, toy: savedToy })
-            console.log('seved:')
             return savedToy
         })
         .catch(err => {
@@ -61,5 +53,7 @@ export function setFilter(filter) {
 }
 
 export function setSort(sort) {
+    console.log('sortxxx:', sort)
+
     store.dispatch({ type: SET_SORT, sort })
 }

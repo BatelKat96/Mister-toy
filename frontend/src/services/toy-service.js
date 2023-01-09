@@ -27,13 +27,16 @@ function query(filterBy = getDefaultFilter(), sortBy = getDefaultSort()) {
             if (filterBy.maxPrice) {
                 filterToys = filterToys.filter(toy => toy.price <= filterBy.maxPrice)
             }
-            if (sortBy.txt > 0) {
-                filterToys = filterToys.sort((a, b) => a.toyName.localeCompare(b.toyName))
+            if (sortBy) {
+                if (sortBy.sortByCat === 'createdAt' || sortBy.sortByCat === 'price') {
+                    filterToys.sort((b1, b2) => (b1[sortBy.sortByCat] - b2[sortBy.sortByCat]) * sortBy.desc)
+                }
+                if (sortBy.sortByCat === 'toyName') {
+                    filterToys.sort((b1, b2) => b1.toyName.localeCompare(b2.toyName) * sortBy.desc)
+                }
             }
-            if (sortBy.txt < 0) {
-                filterToys = filterToys.sort((a, b) => a.toyName.localeCompare(b.toyName))
-            }
-            return filterToys
+
+            return Promise.resolve(filterToys)
         })
 }
 
@@ -45,11 +48,7 @@ function getById(toyId) {
 }
 
 function save(toy) {
-    console.log('toy from service:', toy)
-
     if (toy._id) {
-        console.log('yes:')
-
         return storageService.put(STORAGE_TOYS_KEY, toy)
     } else {
         // car.owner = userService.getLoggedinUser()
@@ -94,5 +93,5 @@ function getDefaultFilter() {
 }
 
 function getDefaultSort() {
-    return { txt: '' }
+    return { sortByCat: '', desc: 1 }
 }

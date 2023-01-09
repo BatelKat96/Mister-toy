@@ -3,7 +3,7 @@ import { ToyPreview } from './toy-preview'
 
 
 export function ToyList({ toys, onRemoveToy }) {
-    console.log('toys:', toys)
+    // console.log('toys:', toys)
     return <ul className="toys-list">
         {toys.map(toy =>
             <li className="review" key={toy._id}>

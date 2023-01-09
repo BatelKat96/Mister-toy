@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { ToyFilter } from '../cmp/toy-filter'
 import { ToyList } from '../cmp/toy-list'
+import { ToySort } from '../cmp/toy-sort'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { loadToys, removeToy, setFilter, setSort } from '../store/actions/toy.action'
 
@@ -9,12 +10,14 @@ export function ToyIndex() {
 
     const toys = useSelector((storeState) => storeState.toyModule.toys)
     const filterBy = useSelector((storeState) => storeState.toyModule.filterBy)
-    const sortBy = useSelector((storeState) => storeState.todoModule.sortBy)
+    const sortBy = useSelector((storeState) => storeState.toyModule.sortBy)
     const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
+
 
     const dispatch = useDispatch()
 
     useEffect(() => {
+
         loadToys(filterBy, sortBy)
     }, [filterBy, sortBy])
 
@@ -30,8 +33,6 @@ export function ToyIndex() {
     // }
 
     function onRemoveToy(toyId) {
-        console.log('toyId from index:', toyId)
-
         removeToy(toyId)
             .then(() => {
                 showSuccessMsg('Toy removed')
@@ -46,6 +47,8 @@ export function ToyIndex() {
     }
 
     function onSetSort(sort) {
+        console.log('sort from index:', sort)
+
         setSort(sort)
     }
 
@@ -53,7 +56,8 @@ export function ToyIndex() {
         <h1>Toy store</h1>
 
 
-        <ToyFilter onSetFilter={onSetFilter} onSetSort={onSetSort} />
+        <ToyFilter onSetFilter={onSetFilter} />
+        <ToySort onSetSort={onSetSort} />
         {isLoading && <p className='loading'>Loading...</p>}
         {/* {isLoading && <span className='loader'></span>} */}
         <ToyList

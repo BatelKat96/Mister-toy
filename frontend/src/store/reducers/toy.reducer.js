@@ -13,15 +13,18 @@ const initialState = {
     toys: [],
     isLoading: false,
     filterBy: toyService.getDefaultFilter(),
-    sortBy: toyService.getDefaultSort(),
+    sortBy: toyService.getDefaultSort()
+
+
 }
+console.log('initialState:', initialState)
 
 
 export function toyReducer(state = initialState, action) {
-
     let toys
-
+    console.log('action.type:', action)
     switch (action.type) {
+
         case SET_TOYS:
             return { ...state, toys: action.toys }
         case SET_IS_LOADING:
