@@ -1,0 +1,57 @@
+[
+  {
+    "toyName": "Talking Doll",
+    "price": 30,
+    "inStock": true,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": "1631031801011",
+    "_id": "n101"
+  },
+  {
+    "toyName": "Frozen Pazzle",
+    "price": 23,
+    "inStock": true,
+    "labels": [
+      "Puzzle",
+      "Box game"
+    ],
+    "createdAt": "1631031801222",
+    "_id": "n102"
+  },
+  {
+    "toyName": "Race Car",
+    "price": 25,
+    "inStock": false,
+    "labels": [
+      "On wheels",
+      "Battery Powered"
+    ],
+    "createdAt": "1631031801001",
+    "_id": "n103"
+  },
+  {
+    "toyName": "Bimba",
+    "price": 30,
+    "inStock": false,
+    "labels": [
+      "Baby",
+      "Outdoor"
+    ],
+    "createdAt": "1631031801300",
+    "_id": "n104"
+  },
+  {
+    "toyName": "Colors Cards",
+    "price": 17,
+    "inStock": true,
+    "labels": [
+      "Box game",
+      "Baby"
+    ],
+    "createdAt": "1631031801022",
+    "_id": "n105"
+  }
+]

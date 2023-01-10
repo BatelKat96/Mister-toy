@@ -9,8 +9,11 @@ module.exports = {
     save
 }
 
-function query(filterBy) {
+function query(filterBy, sortBy) {
+    if (!filterBy) return Promise.resolve(toys)
+
     let filterToys = toys
+
     if (filterBy.txt) {
         const regex = new RegExp(filterBy.txt, 'i')
         filterToys = filterToys.filter(toy => regex.test(toy.toyName))
@@ -53,9 +56,12 @@ function save(toy) {
         toyToUpdate.toyName = toy.toyName
         toyToUpdate.price = toy.price
         toyToUpdate.inStock = toy.inStock
+        toyToUpdate.labels = toy.labels
+        toyToUpdate.createdAt = toy.createdAt
     } else {
+        toy.createdAt = new Date(Date.now());
         toy._id = _makeId()
-        toys.push(toy)
+        toys.unshift(toy)
     }
     return _writeToysToFile().then(() => toy)
 }
