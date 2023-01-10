@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { ToyFilter } from '../cmp/toy-filter'
 import { ToyList } from '../cmp/toy-list'
 import { ToySort } from '../cmp/toy-sort'
@@ -13,33 +14,15 @@ export function ToyIndex() {
     const sortBy = useSelector((storeState) => storeState.toyModule.sortBy)
     const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
 
-
-    const dispatch = useDispatch()
-
     useEffect(() => {
-
         loadToys(filterBy, sortBy)
     }, [filterBy, sortBy])
 
 
-    // function onLoadToys(filterBy) {
-    //     loadToys(filterBy)
-    //         .then(() => {
-    //             // showSuccessMsg('Cars loaded')
-    //         })
-    //         .catch(err => {
-    //             showErrorMsg('Cannot load toys')
-    //         })
-    // }
-
     function onRemoveToy(toyId) {
         removeToy(toyId)
-            .then(() => {
-                showSuccessMsg('Toy removed')
-            })
-            .catch(err => {
-                showErrorMsg('Cannot remove toy')
-            })
+            .then(showSuccessMsg('Toy removed'))
+            .catch(showErrorMsg('Cannot remove toy'))
     }
 
     function onSetFilter(filter) {
@@ -55,7 +38,7 @@ export function ToyIndex() {
     return <section>
         <h1>Toy store</h1>
 
-
+        <Link to={`/toy/edit`}>  <button className="clean-btn btn">Add Toy</button></Link>
         <ToyFilter onSetFilter={onSetFilter} />
         <ToySort onSetSort={onSetSort} />
         {isLoading && <p className='loading'>Loading...</p>}

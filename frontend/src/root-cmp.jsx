@@ -24,6 +24,7 @@ export function App() {
               <Route path="/" element={<HomePage />} />
               {/* <Route element={<AboutUs />} path="/about" /> */}
               <Route element={<ToysDetails />} path="/toy/:toyId" />
+              <Route element={<ToyEdit />} path="/toy/edit" />
               <Route element={<ToyEdit />} path="/toy/edit/:toyId" />
 
             </Routes>

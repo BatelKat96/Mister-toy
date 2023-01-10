@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
@@ -7,13 +8,14 @@ import { toyService } from '../services/toy-service'
 
 
 export function ToysDetails() {
-    // return <h1>hello from todo details</h1>
+    // const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
 
     const [toy, setToy] = useState(null)
     const { toyId } = useParams()
     const navigate = useNavigate()
 
     useEffect(() => {
+
         toyService.getById(toyId)
             .then(toy => {
                 setToy(toy)
@@ -26,9 +28,9 @@ export function ToysDetails() {
 
 
 
-
-
     if (!toy) return <h1 className='loading'>Loadings....</h1>
+
+    // if (isLoading) return <p className='loading'>Loading...כ</p>
     return toy && <div className='flex-grow main-layout toy-details'>
         <h2>Toy Details </h2>
         <br />
@@ -41,9 +43,9 @@ export function ToysDetails() {
 
         </div>
         <p>Desciption: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ducimus sit ipsa mollitia sed ipsum odit? Distinctio reiciendis quo cupiditate neque at, itaque ducimus quod voluptates dignissimos adipisci beatae deleniti?</p>
-        <ul><span className='labels-headline'>Labels:</span>
+        {/* <ul><span className='labels-headline'>Labels:</span>
             {toy.labels.map(label => <li className='labels-li' key={`${toy._id} + ${label}`}>{label}</li>)}
-        </ul>
+        </ul> */}
         <div className='btn-back'>
             <Link to="/toy" className="btn">Back to List</Link>
         </div>

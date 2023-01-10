@@ -13,7 +13,8 @@ export const toyService = {
     getById,
     save,
     getDefaultFilter,
-    getDefaultSort
+    getDefaultSort,
+    getEmptyToy
 }
 
 function query(filterBy = getDefaultFilter(), sortBy = getDefaultSort()) {
@@ -74,7 +75,7 @@ function _createToys() {
     }
 }
 
-function _createToy(toyName, price, labels, inStock, imgUrl) {
+function _createToy(toyName, price, labels, inStock, imgUrl = null) {
     return {
         _id: utilService.makeId(),
         toyName,

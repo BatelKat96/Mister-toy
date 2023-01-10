@@ -4,8 +4,8 @@ export function ToyPreview({ toy }) {
         <p>Price: {toy.price}$</p>
         {!toy.inStock && <p className='out-stock'>Out of stock</p>}
         <div className='preview-img'>
-
-            <img src={require(`../assets/img/${toy.imgUrl}`)} />
+            {!toy.imgUrl && <img src={`https://robohash.org/${toy.toyName}?set=set2`} alt="" />}
+            {toy.imgUrl && <img src={require(`../assets/img/${toy.imgUrl}`)} />}
         </div>
     </article>
 
