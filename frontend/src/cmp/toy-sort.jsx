@@ -23,7 +23,7 @@ export function ToySort({ onSetSort }) {
     }
 
     return <section className='sort-main-section'>
-        <h4>Toy Filter</h4>
+        <h4>Toy Sort</h4>
         <div className='sort-section'>
 
             <select

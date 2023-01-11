@@ -67,6 +67,7 @@ export function ToyEdit() {
             <input type="number"
                 name="price"
                 id="price"
+                min="1"
                 onChange={handleChange}
                 defaultValue={toy.price}
             />

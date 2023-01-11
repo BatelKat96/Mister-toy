@@ -1,20 +1,15 @@
 [
   {
-    "inStock": true,
-    "createdAt": "2023-01-11T17:44:23.851Z",
-    "_id": "I8NWh"
-  },
-  {
-    "toyName": "Talking Doll",
-    "price": 30,
+    "toyName": "Colors Cards",
+    "price": 17,
     "inStock": true,
     "labels": [
-      "Doll",
-      "Battery Powered"
+      "Box game",
+      "Baby"
     ],
-    "createdAt": "1631031801011",
-    "imgUrl": "doll.jpg",
-    "_id": "n101"
+    "createdAt": "1631031801022",
+    "imgUrl": "cards.jpg",
+    "_id": "n105"
   },
   {
     "toyName": "Frozen Pazzle",
@@ -41,8 +36,20 @@
     "_id": "n103"
   },
   {
-    "toyName": "Bimba",
+    "toyName": "Talking Doll",
     "price": 30,
+    "inStock": true,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": "1631031801011",
+    "imgUrl": "doll.jpg",
+    "_id": "n101"
+  },
+  {
+    "toyName": "Bimba",
+    "price": 35,
     "inStock": false,
     "labels": [
       "Baby",
@@ -51,17 +58,5 @@
     "createdAt": "1631031801300",
     "imgUrl": "bimba.jpeg",
     "_id": "n104"
-  },
-  {
-    "toyName": "Colors Cards",
-    "price": 17,
-    "inStock": true,
-    "labels": [
-      "Box game",
-      "Baby"
-    ],
-    "createdAt": "1631031801022",
-    "imgUrl": "cards.jpg",
-    "_id": "n105"
   }
 ]
