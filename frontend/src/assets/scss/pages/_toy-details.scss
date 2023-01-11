@@ -1,0 +1,21 @@
+.toy-details {
+
+    // flex-grow: 1;
+    .details-img {
+        height: 40vh;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .labels-headline {
+        font-family: Lato;
+        text-decoration: underline;
+    }
+
+    .labels-li {
+        margin-top: 7px;
+        margin-inline-start: 40px;
+    }
+}

@@ -1,0 +1,19 @@
+.filter-main-section {
+    h4 {
+        text-align: center;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+}
+
+.filter-section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+
+    .filter-option {
+        margin-inline: 10px;
+    }
+}

@@ -1,5 +1,22 @@
 [
   {
+    "inStock": true,
+    "createdAt": "2023-01-11T17:44:23.851Z",
+    "_id": "I8NWh"
+  },
+  {
+    "toyName": "Talking Doll",
+    "price": 30,
+    "inStock": true,
+    "labels": [
+      "Doll",
+      "Battery Powered"
+    ],
+    "createdAt": "1631031801011",
+    "imgUrl": "doll.jpg",
+    "_id": "n101"
+  },
+  {
     "toyName": "Frozen Pazzle",
     "price": 23,
     "inStock": true,
@@ -8,6 +25,7 @@
       "Box game"
     ],
     "createdAt": "1631031801222",
+    "imgUrl": "frozen.jpg",
     "_id": "n102"
   },
   {
@@ -19,6 +37,7 @@
       "Battery Powered"
     ],
     "createdAt": "1631031801001",
+    "imgUrl": "car.jpg",
     "_id": "n103"
   },
   {
@@ -30,6 +49,7 @@
       "Outdoor"
     ],
     "createdAt": "1631031801300",
+    "imgUrl": "bimba.jpeg",
     "_id": "n104"
   },
   {
@@ -41,28 +61,7 @@
       "Baby"
     ],
     "createdAt": "1631031801022",
+    "imgUrl": "cards.jpg",
     "_id": "n105"
-  },
-  {
-    "toyName": "Computer",
-    "price": 100,
-    "inStock": true,
-    "labels": [
-      "Box game",
-      "Battery Powered"
-    ],
-    "createdAt": "1631031701011",
-    "_id": "mvKMn"
-  },
-  {
-    "toyName": "computer",
-    "price": 100,
-    "inStock": true,
-    "labels": [
-      "Baby",
-      "Battery Powered"
-    ],
-    "createdAt": "1631031801011",
-    "_id": "uge7e"
   }
 ]

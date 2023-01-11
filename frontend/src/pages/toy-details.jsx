@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { showErrorMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
@@ -8,7 +7,6 @@ import { toyService } from '../services/toy-service'
 
 
 export function ToysDetails() {
-    // const isLoading = useSelector((storeState) => storeState.toyModule.isLoading)
 
     const [toy, setToy] = useState(null)
     const { toyId } = useParams()
@@ -18,6 +16,8 @@ export function ToysDetails() {
 
         toyService.getById(toyId)
             .then(toy => {
+                console.log('toy:', toy)
+
                 setToy(toy)
             })
             .catch(err => {
@@ -29,8 +29,6 @@ export function ToysDetails() {
 
 
     if (!toy) return <h1 className='loading'>Loadings....</h1>
-
-    // if (isLoading) return <p className='loading'>Loading...כ</p>
     return toy && <div className='flex-grow main-layout toy-details'>
         <h2>Toy Details </h2>
         <br />
@@ -39,7 +37,8 @@ export function ToysDetails() {
         {!toy.inStock && <p className='out-stock'>Out of stock</p>}
         <div className='details-img'>
 
-            <img src={require(`../assets/img/${toy.imgUrl}`)} />
+            {!toy.imgUrl && <img src={`https://robohash.org/${toy.toyName}?set=set2`} alt="" />}
+            {toy.imgUrl && <img src={require(`../assets/img/${toy.imgUrl}`)} />}
 
         </div>
         <p>Desciption: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ducimus sit ipsa mollitia sed ipsum odit? Distinctio reiciendis quo cupiditate neque at, itaque ducimus quod voluptates dignissimos adipisci beatae deleniti?</p>

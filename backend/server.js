@@ -1,16 +1,19 @@
 const express = require('express')
 const cookieParser = require('cookie-parser')
+const cors = require('cors')
 const toyService = require('./services/toy.service.js')
 
-const cors = require('cors')
 const app = express()
 
 // App configuration
+app.use(cookieParser())
+app.use(express.json())
 app.use(express.static('public'))
 
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, 'public')))
+    // app.use(express.static(path.resolve(__dirname, 'public')))
+    app.use(express.static('public'))
 } else {
     const corsOptions = {
         origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:3000', 'http://localhost:3000'],
@@ -19,14 +22,14 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions))
 }
 
-app.use(cookieParser())
-app.use(express.json())
 
 
 // Real routing express
 // List
 app.get('/api/toy', (req, res) => {
-    const { filterBy, sortBy } = JSON.parse(req.query.params)
+    console.log('req.query.params:', req.query.params)
+
+    const { filterBy, sortBy } = req.query.params
 
     toyService.query(filterBy, sortBy)
         .then((toys) => {
@@ -52,7 +55,7 @@ app.get('/api/toy/:toyId', (req, res) => {
 })
 
 // Update
-app.put('/api/toy', (req, res) => {
+app.put('/api/toy/:toyId', (req, res) => {
 
     const toy = req.body
     console.log('TOY ---------', toy)
@@ -82,10 +85,14 @@ app.post('/api/toy', (req, res) => {
 
 // Remove
 app.delete('/api/toy/:toyId', (req, res) => {
+    console.log('req.params:', req.params)
+
     const { toyId } = req.params
+    console.log('toyId: from server', toyId)
+
     toyService.remove(toyId)
         .then(() => {
-            res.end({ msg: 'Toy removed successfully', toyId })
+            res.send({ msg: 'Toy removed successfully', toyId })
         })
         .catch(err => {
             console.log('Had issues deleting toy', err)

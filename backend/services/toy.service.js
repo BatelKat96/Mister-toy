@@ -10,7 +10,9 @@ module.exports = {
 }
 
 function query(filterBy, sortBy) {
-    if (!filterBy) return Promise.resolve(toys)
+    // if (!filterBy && !sortBy) return Promise.resolve(toys)
+    console.log('filterBy:', filterBy)
+    console.log('sortBy:', sortBy)
 
     let filterToys = toys
 
@@ -40,9 +42,16 @@ function get(toyId) {
 }
 
 function remove(toyId) {
-    const idx = toys.findIndex(toy => toy._id === toyId)
+    console.log('toyId from service back:', toyId)
+
+    const idx = toys.findIndex((toy) => toy._id === toyId)
+
+    console.log('idx:', idx)
+
     if (idx === -1) return Promise.reject('No Such toy')
     const toy = toys[idx]
+    console.log('toyrenmove:', toy)
+    
     toys.splice(idx, 1)
     return _writeToysToFile()
 }
@@ -83,6 +92,8 @@ function _writeToysToFile() {
             if (err) return rej(err)
             // console.log("File written successfully\n");
             res()
-        });
+        })
     })
 }
+
+

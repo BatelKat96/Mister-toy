@@ -23,7 +23,7 @@ export function ToyEdit() {
     function handleChange({ target }) {
         let { value, type, name: field } = target
         value = type === 'number' ? +value : value
-        setToy((prevTodo) => ({ ...prevTodo, [field]: value }))
+        setToy((prevToy) => ({ ...prevToy, [field]: value }))
 
     }
 
@@ -32,7 +32,7 @@ export function ToyEdit() {
         let newValue
         if (value === 'false') newValue = false
         if (value === 'true') newValue = true
-        setToy((prevTodo) => ({ ...prevTodo, [field]: newValue }))
+        setToy((prevToy) => ({ ...prevToy, [field]: newValue }))
 
     }
     function onSaveEdit(ev) {

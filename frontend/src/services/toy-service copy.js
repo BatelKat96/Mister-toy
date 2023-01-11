@@ -6,8 +6,8 @@ const labels = ["On wheels", "Box game", "Art", "Baby",
     "Doll", "Puzzle", "Outdoor", "Battery Powered"]
 
 const STORAGE_TOYS_KEY = 'toyDB'
-// _createToys()
-// const BASE_URL = 'toy'
+_createToys()
+
 export const toyService = {
     query,
     remove,
@@ -18,34 +18,49 @@ export const toyService = {
     getEmptyToy
 }
 
-function query(filterBy, sortBy) {
 
+function query(filterBy = getDefaultFilter(), sortBy = getDefaultSort()) {
+    return storageService.query(STORAGE_TOYS_KEY)
+        .then(toys => {
+            let filterToys = toys
+            if (filterBy.txt) {
+                const regex = new RegExp(filterBy.txt, 'i')
+                filterToys = filterToys.filter(toy => regex.test(toy.toyName))
+            }
+            if (filterBy.maxPrice) {
+                filterToys = filterToys.filter(toy => toy.price <= filterBy.maxPrice)
+            }
+            if (sortBy) {
+                if (sortBy.sortByCat === 'createdAt' || sortBy.sortByCat === 'price') {
+                    filterToys.sort((b1, b2) => (b1[sortBy.sortByCat] - b2[sortBy.sortByCat]) * sortBy.desc)
+                }
+                if (sortBy.sortByCat === 'toyName') {
+                    filterToys.sort((b1, b2) => b1.toyName.localeCompare(b2.toyName) * sortBy.desc)
+                }
+            }
 
-    // const queryParams = `?txt=${filterBy.txt}&maxPrice=${filterBy.maxPrice}&inStock=${filterBy.inStock}&sortByCat=${sortBy.sortByCat}&desc=${sortBy.desc}`
-    // return httpService.get(BASE_URL + queryParams)
-    return httpService.get('toy', { params: { filterBy, sortBy } })
-
+            return Promise.resolve(filterToys)
+        })
 }
 
 function remove(toyId) {
-    console.log('toyId from service fr:', toyId)
-
-    return httpService.delete(`toy/${toyId}`)
+    return storageService.remove(STORAGE_TOYS_KEY, toyId)
 }
 
 
 function getById(toyId) {
-    return httpService.get(`toy/${toyId}`)
+    return storageService.get(STORAGE_TOYS_KEY, toyId)
 }
+
 
 function save(toy) {
     if (toy._id) {
-        return httpService.put(`toy/${toy._id}`, toy)
+        return storageService.put(STORAGE_TOYS_KEY, toy)
     } else {
-        return httpService.post('toy', toy)
+        // car.owner = userService.getLoggedinUser()
+        return storageService.post(STORAGE_TOYS_KEY, toy)
     }
 }
-
 
 function getEmptyToy(toyName, price, labels, inStock = true) {
     return { toyName, price, labels, inStock }
@@ -80,10 +95,9 @@ function _createToy(toyName, price, labels, inStock, imgUrl = null) {
 
 
 function getDefaultFilter() {
-    return { txt: '', maxPrice: '', inStock: '' }
+    return { txt: '', maxPrice: '', inStock: '', label: '' }
 }
 
 function getDefaultSort() {
     return { sortByCat: '', desc: 1 }
 }
-

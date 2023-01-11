@@ -1,0 +1,28 @@
+.toys-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    // // flex-wrap: wrap;
+    // margin: auto;
+
+    .review {
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+        align-items: center;
+        // justify-items: center;
+        border: 2px black solid;
+        padding: 10px;
+
+        .btn-option-section {
+            justify-self: center;
+
+            .btn {
+                margin-inline: 7px;
+            }
+        }
+
+    }
+
+
+
+}

@@ -31,29 +31,30 @@ export function ToyFilter({ onSetFilter }) {
     }
 
 
-    return <section className="car-filter full main-layout">
+    return <section className="filter-main-section">
         <h4>Toy Filter</h4>
-        <form onSubmit={onSubmitFilter}>
-            <label htmlFor="toyName">Toy name:</label>
-            <input type="text"
-                id="toyName"
-                name="txt"
-                placeholder="By toy name"
-                value={filterByToEdit.txt}
-                onChange={handleChange}
-                ref={elInputRef}
-            />
-
-            <label htmlFor="maxPrice">Max price:</label>
-            <input type="number"
-                id="maxPrice"
-                name="maxPrice"
-                placeholder="By max price"
-                value={filterByToEdit.maxPrice}
-                onChange={handleChange}
-            />
-
-            <button hidden>Filter</button>
+        <form onSubmit={onSubmitFilter} className="filter-section">
+            <div className='filter-option'>
+                <label htmlFor="toyName">Toy name: </label>
+                <input type="text"
+                    id="toyName"
+                    name="txt"
+                    placeholder="By toy name"
+                    value={filterByToEdit.txt}
+                    onChange={handleChange}
+                    ref={elInputRef}
+                />
+            </div>
+            <div className='filter-option'>
+                <label htmlFor="maxPrice">Max price: </label>
+                <input type="number"
+                    id="maxPrice"
+                    name="maxPrice"
+                    placeholder="By max price"
+                    value={filterByToEdit.maxPrice}
+                    onChange={handleChange}
+                />
+            </div>
         </form>
 
     </section>

@@ -1,0 +1,24 @@
+.toy-preview {
+    display: grid;
+    align-content: flex-start;
+
+    h3 {
+        align-self: flex-start;
+    }
+
+    .preview-img {
+        height: 145px;
+        margin: 10px;
+
+        img {
+            object-fit: contain;
+
+        }
+    }
+
+
+    .out-stock {
+        color: rgb(177, 54, 54);
+        font-weight: bold;
+    }
+}

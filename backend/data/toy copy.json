@@ -8,6 +8,7 @@
       "Battery Powered"
     ],
     "createdAt": "1631031801011",
+    "imgUrl":"doll.jpg",
     "_id": "n101"
   },
   {
@@ -19,6 +20,7 @@
       "Box game"
     ],
     "createdAt": "1631031801222",
+    "imgUrl":"frozen.jpg",
     "_id": "n102"
   },
   {
@@ -30,6 +32,7 @@
       "Battery Powered"
     ],
     "createdAt": "1631031801001",
+    "imgUrl":"car.jpg",
     "_id": "n103"
   },
   {
@@ -41,6 +44,7 @@
       "Outdoor"
     ],
     "createdAt": "1631031801300",
+    "imgUrl":"bimba.jpeg",
     "_id": "n104"
   },
   {
@@ -52,6 +56,7 @@
       "Baby"
     ],
     "createdAt": "1631031801022",
+    "imgUrl":"cards.jpg",
     "_id": "n105"
   }
 ]

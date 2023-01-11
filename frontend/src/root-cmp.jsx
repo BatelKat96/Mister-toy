@@ -1,5 +1,6 @@
 
 import './assets/css/main.css';
+import './assets/scss/main.scss';
 
 import { Provider } from 'react-redux';
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
@@ -10,6 +11,8 @@ import { ToyIndex } from './pages/toy-index';
 import { store } from './store/store';
 import { ToysDetails } from './pages/toy-details';
 import { ToyEdit } from './pages/toy-edit';
+import { AppFooter } from './cmp/app-footer';
+import { AppHeader } from './cmp/app-header';
 
 
 export function App() {
@@ -17,8 +20,8 @@ export function App() {
     <Provider store={store}>
       <Router>
         <section className="main-layout app">
-          {/* <AppHeader /> */}
-          <main>
+          <AppHeader />
+          <main className="full main-section main-layout">
             <Routes>
               <Route path="/toy" element={<ToyIndex />} />
               <Route path="/" element={<HomePage />} />
@@ -29,7 +32,7 @@ export function App() {
 
             </Routes>
           </main>
-          {/* <AppFooter /> */}
+          <AppFooter />
         </section>
       </Router>
     </Provider>

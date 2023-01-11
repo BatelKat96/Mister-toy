@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -21,7 +22,9 @@ export function ToyIndex() {
 
     function onRemoveToy(toyId) {
         removeToy(toyId)
-            .then(showSuccessMsg('Toy removed'))
+            .then(() => {
+                showSuccessMsg('Toy removed')
+            })
             .catch(showErrorMsg('Cannot remove toy'))
     }
 
@@ -35,12 +38,14 @@ export function ToyIndex() {
         setSort(sort)
     }
 
-    return <section>
+    return <section className='toy-index main-layout '>
         <h1>Toy store</h1>
+        <div className='toy-feature-section'>
 
-        <Link to={`/toy/edit`}>  <button className="clean-btn btn">Add Toy</button></Link>
-        <ToyFilter onSetFilter={onSetFilter} />
-        <ToySort onSetSort={onSetSort} />
+            <Link to={`/toy/edit`}>  <button className="add-toy-btn clean-btn btn">Add Toy</button></Link>
+            <ToyFilter onSetFilter={onSetFilter} />
+            <ToySort onSetSort={onSetSort} />
+        </div>
         {isLoading && <p className='loading'>Loading...</p>}
         {/* {isLoading && <span className='loader'></span>} */}
         <ToyList

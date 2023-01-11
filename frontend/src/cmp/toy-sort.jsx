@@ -22,25 +22,29 @@ export function ToySort({ onSetSort }) {
 
     }
 
-    return <section className='toy-sort-section'>
+    return <section className='sort-main-section'>
+        <h4>Toy Filter</h4>
+        <div className='sort-section'>
 
-        <select
-            name='sortByCat'
-            value={sortByToEdit.sortByCat}
-            onChange={handleSortChange}
-        >
-            <option value=''>Select Sorting</option>
-            <option value='toyName'>Toy name</option>
-            <option value='price'>Price</option>
-            <option value='createdAt'>CreatedAt</option>
-        </select>
-        <label htmlFor='desc'>Descending:</label>
-        <input
-            name='desc'
-            id='desc'
-            type='checkbox'
-            value={sortByToEdit.desc}
-            onChange={handleSortChange}
-        />
+            <select
+                name='sortByCat'
+                value={sortByToEdit.sortByCat}
+                onChange={handleSortChange}
+            >
+                <option value=''>Select Sorting</option>
+                <option value='toyName'>Toy name</option>
+                <option value='price'>Price</option>
+                <option value='createdAt'>CreatedAt</option>
+            </select>
+            <label htmlFor='desc'>Descending:
+                <input
+                    name='desc'
+                    id='desc'
+                    type='checkbox'
+                    value={sortByToEdit.desc}
+                    onChange={handleSortChange}
+                />
+            </label>
+        </div>
     </section>
 }

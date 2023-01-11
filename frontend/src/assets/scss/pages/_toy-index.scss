@@ -1,0 +1,24 @@
+.toy-index {
+    margin: 0 auto;
+
+    .toy-feature-section {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: -1px 1px 4px 0px #c2c3c3;
+        margin-bottom: 20px;
+        padding: 20px 30px;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0.7em;
+        text-align: center;
+        font-family: Lato;
+    }
+
+    .add-toy-btn {
+        font-family: Lato;
+        padding: 15px;
+    }
+}

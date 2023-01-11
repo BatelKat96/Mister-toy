@@ -1,0 +1,22 @@
+.user-msg {
+    background-color: lightgray;
+    padding: 1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+
+    &.success {
+        background-color: rgb(255, 249, 72);
+        color: black;
+    }
+
+    &.error {
+        background-color: rgb(255, 83, 109);
+    }
+
+
+    button {
+        float: right;
+        margin: 1em;
+    }
+}

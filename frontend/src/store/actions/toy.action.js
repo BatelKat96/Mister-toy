@@ -5,8 +5,8 @@ import { store } from '../store';
 
 export function loadToys(filterBy, sortBy) {
     store.dispatch({ type: SET_IS_LOADING, isLoading: true })
-    console.log('sortBy: from action', sortBy)
-    // const { filterBy, sortBy } = store.getState().todoModule
+    // console.log('sortBy: from action', sortBy)
+
     return toyService.query(filterBy, sortBy)
         .then((toys) => {
             store.dispatch({ type: SET_TOYS, toys })
@@ -24,13 +24,17 @@ export function loadToys(filterBy, sortBy) {
 export function removeToy(toyId) {
     return toyService.remove(toyId)
         .then(() => {
+            console.log('yes:')
+
             store.dispatch({ type: REMOVE_TOY, toyId })
         })
         .catch(err => {
+            console.log('no:')
             console.log('Had issues Removing toy', err)
             throw err
         })
 }
+
 
 
 
@@ -42,7 +46,7 @@ export function saveToy(toy) {
             return savedToy
         })
         .catch(err => {
-            console.error('Cannot save todo:', err)
+            console.error('Cannot save toy:', err)
             throw err
         })
 }
