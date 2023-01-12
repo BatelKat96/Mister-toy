@@ -20,12 +20,14 @@ export function ToyIndex() {
     }, [filterBy, sortBy])
 
 
-    function onRemoveToy(toyId) {
-        removeToy(toyId)
-            .then(() => {
-                showSuccessMsg('Toy removed')
-            })
-            .catch(showErrorMsg('Cannot remove toy'))
+    async function onRemoveToy(toyId) {
+        try {
+            await removeToy(toyId)
+            showSuccessMsg('Toy removed')
+        }
+        catch {
+            showErrorMsg('Cannot remove toy')
+        }
     }
 
     function onSetFilter(filter) {
@@ -34,7 +36,6 @@ export function ToyIndex() {
 
     function onSetSort(sort) {
         console.log('sort from index:', sort)
-
         setSort(sort)
     }
 

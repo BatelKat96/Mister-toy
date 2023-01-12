@@ -10,14 +10,16 @@ export function ToyEdit() {
     const { toyId } = useParams()
     const navigate = useNavigate()
 
-    useEffect(() => {
+    useEffect(async () => {
         if (!toyId) return
-        toyService.getById(toyId)
-            .then(toy => setToy(toy))
-            .catch(err => {
-                showErrorMsg('Cannot load toy')
-                navigate('/toy')
-            })
+        try {
+            const toy = await toyService.getById(toyId)
+            setToy(toy)
+        }
+        catch (err) {
+            showErrorMsg('Cannot load toy')
+            navigate('/toy')
+        }
     }, [])
 
     function handleChange({ target }) {
@@ -35,16 +37,15 @@ export function ToyEdit() {
         setToy((prevToy) => ({ ...prevToy, [field]: newValue }))
 
     }
-    function onSaveEdit(ev) {
+    async function onSaveEdit(ev) {
         ev.preventDefault()
-        saveToy(toy)
-            .then(() => {
-                showSuccessMsg(`Toy edited (id: ${toy._id})`)
-                navigate('/toy')
-            })
-            .catch((err) => {
-                showErrorMsg('Cannot change toy status', err)
-            })
+        try {
+            const savedToy = await saveToy(toy)
+            showSuccessMsg(`Toy edited (id: ${savedToy._id})`)
+            navigate('/toy')
+        } catch (err) {
+            showErrorMsg('Cannot change toy status', err)
+        }
     }
 
     if (!toy) return <h1 className='loading'>Loadings....</h1>

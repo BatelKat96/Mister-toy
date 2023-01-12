@@ -4,26 +4,32 @@ import { showErrorMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
 
 
-
-
 export function ToysDetails() {
 
     const [toy, setToy] = useState(null)
     const { toyId } = useParams()
     const navigate = useNavigate()
 
-    useEffect(() => {
+    useEffect(async () => {
+        try {
+            const toy = await toyService.getById(toyId)
+            setToy(toy)
 
-        toyService.getById(toyId)
-            .then(toy => {
-                console.log('toy:', toy)
+        } catch (err) {
+            showErrorMsg('Cannot load toy')
+            navigate('/toy')
+        }
 
-                setToy(toy)
-            })
-            .catch(err => {
-                showErrorMsg('Cannot load toy')
-                navigate('/toy')
-            })
+        // toyService.getById(toyId)
+        //     .then(toy => {
+        //         setToy(toy)
+        //         console.log('toy:', toy)
+
+        //     })
+        //     .catch(err => {
+        //         showErrorMsg('Cannot load toy')
+        //         navigate('/toy')
+        //     })
     }, [])
 
 
