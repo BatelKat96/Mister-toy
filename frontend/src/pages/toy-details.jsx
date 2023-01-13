@@ -10,7 +10,12 @@ export function ToysDetails() {
     const { toyId } = useParams()
     const navigate = useNavigate()
 
-    useEffect(async () => {
+    useEffect(() => {
+
+        loadToy()
+    }, [])
+
+    async function loadToy() {
         try {
             const toy = await toyService.getById(toyId)
             setToy(toy)
@@ -19,20 +24,7 @@ export function ToysDetails() {
             showErrorMsg('Cannot load toy')
             navigate('/toy')
         }
-
-        // toyService.getById(toyId)
-        //     .then(toy => {
-        //         setToy(toy)
-        //         console.log('toy:', toy)
-
-        //     })
-        //     .catch(err => {
-        //         showErrorMsg('Cannot load toy')
-        //         navigate('/toy')
-        //     })
-    }, [])
-
-
+    }
 
     if (!toy) return <h1 className='loading'>Loadings....</h1>
     return toy && <div className='flex-grow main-layout toy-details'>

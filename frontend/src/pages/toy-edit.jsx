@@ -10,16 +10,22 @@ export function ToyEdit() {
     const { toyId } = useParams()
     const navigate = useNavigate()
 
-    useEffect(async () => {
+    useEffect(() => {
         if (!toyId) return
-        try {
-            const toy = await toyService.getById(toyId)
-            setToy(toy)
+        async function data() {
+
+            try {
+                const toy = await toyService.getById(toyId)
+                console.log('kdjk')
+                setToy(toy)
+            }
+            catch (err) {
+                showErrorMsg('Cannot load toy')
+                console.log('no:')
+                navigate('/toy')
+            }
         }
-        catch (err) {
-            showErrorMsg('Cannot load toy')
-            navigate('/toy')
-        }
+        data()
     }, [])
 
     function handleChange({ target }) {
@@ -41,6 +47,8 @@ export function ToyEdit() {
         ev.preventDefault()
         try {
             const savedToy = await saveToy(toy)
+            console.log('savedToy add after action:', savedToy)
+
             showSuccessMsg(`Toy edited (id: ${savedToy._id})`)
             navigate('/toy')
         } catch (err) {

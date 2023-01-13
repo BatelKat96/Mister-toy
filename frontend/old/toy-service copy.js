@@ -1,6 +1,6 @@
-import { storageService } from './async-storage.service'
-import { httpService } from './http.service'
-import { utilService } from './util.service'
+import { storageService } from '../src/services/async-storage.service'
+import { httpService } from '../src/services/http.service'
+import { utilService } from '../src/services/util.service'
 
 const labels = ["On wheels", "Box game", "Art", "Baby",
     "Doll", "Puzzle", "Outdoor", "Battery Powered"]

@@ -14,6 +14,9 @@ export const httpService = {
         return ajax(endpoint, 'GET', data)
     },
     post(endpoint, data) {
+        console.log('endpoint:', endpoint)
+        console.log('data:', data)
+
         return ajax(endpoint, 'POST', data)
     },
     put(endpoint, data) {
@@ -27,8 +30,6 @@ export const httpService = {
 async function ajax(endpoint, method = 'GET', data = null) {
     console.log('data:', data)
     console.log('endpoint:', endpoint)
-
-
     try {
         const res = await axios({
             url: `${BASE_URL}${endpoint}`,

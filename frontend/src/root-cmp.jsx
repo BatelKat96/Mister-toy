@@ -1,5 +1,5 @@
 
-import './assets/css/main.css';
+// import './assets/css/main.css';
 import './assets/scss/main.scss';
 
 import { Provider } from 'react-redux';

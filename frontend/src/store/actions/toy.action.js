@@ -6,7 +6,15 @@ import { store } from '../store';
 export async function loadToys(filterBy, sortBy) {
     store.dispatch({ type: SET_IS_LOADING, isLoading: true })
     try {
-        const toys = await toyService.query(filterBy, sortBy)
+        const toys = await toyService.query(filterBy)
+        if (sortBy) {
+            if (sortBy.sortByCat === 'createdAt' || sortBy.sortByCat === 'price') {
+                toys.sort((b1, b2) => (b1[sortBy.sortByCat] - b2[sortBy.sortByCat]) * sortBy.desc)
+            }
+            if (sortBy.sortByCat === 'toyName') {
+                toys.sort((b1, b2) => b1.toyName.localeCompare(b2.toyName) * sortBy.desc)
+            }
+        }
         store.dispatch({ type: SET_TOYS, toys })
         return toys
     }
@@ -34,9 +42,13 @@ export async function removeToy(toyId) {
 
 
 export async function saveToy(toy) {
+    console.log('toy from toy action:', toy)
+
     const type = (toy._id) ? UPDATE_TOY : ADD_TOY
     try {
         const savedToy = await toyService.save(toy)
+        console.log('savedToy from try action:', savedToy)
+
         store.dispatch({ type, toy: savedToy })
         return savedToy
     } catch (err) {
