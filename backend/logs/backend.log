@@ -186,3 +186,195 @@
 14.1.2023, 18:22:03 - DEBUG - Getting Toys 
 14.1.2023, 18:22:03 - INFO - Req was made 
 14.1.2023, 18:22:03 - DEBUG - Getting Toys 
+14.1.2023, 18:35:29 - INFO - Req was made 
+14.1.2023, 18:35:29 - DEBUG - Getting Toys 
+14.1.2023, 18:35:29 - INFO - Req was made 
+14.1.2023, 18:35:29 - DEBUG - Getting Toys 
+14.1.2023, 18:35:29 - DEBUG - Getting Toys 
+14.1.2023, 18:35:29 - INFO - Req was made 
+14.1.2023, 18:35:30 - DEBUG - auth.service - login with username: muki 
+14.1.2023, 18:35:30 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+14.1.2023, 18:35:34 - WARN - mukiattempted to perform admin action 
+14.1.2023, 18:36:31 - INFO - Server is running on port: 3030 
+14.1.2023, 18:36:35 - INFO - Req was made 
+14.1.2023, 18:36:35 - DEBUG - Getting Toys 
+14.1.2023, 18:36:36 - INFO - Req was made 
+14.1.2023, 18:36:36 - DEBUG - Getting Toys 
+14.1.2023, 18:36:36 - DEBUG - Getting Toys 
+14.1.2023, 18:36:36 - INFO - Req was made 
+14.1.2023, 18:36:43 - WARN - mukiattempted to perform admin action 
+14.1.2023, 18:37:20 - WARN - mukiattempted to perform admin action 
+14.1.2023, 18:39:59 - INFO - Server is running on port: 3030 
+14.1.2023, 18:40:01 - WARN - muki attempted to perform admin action 
+14.1.2023, 18:40:58 - DEBUG - auth.service - login with username: batel 
+14.1.2023, 18:40:58 - ERROR - Failed to Login Invalid username or password 
+14.1.2023, 18:41:11 - DEBUG - auth.service - login with username: Batel 
+14.1.2023, 18:41:11 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+14.1.2023, 18:41:15 - INFO - Req was made 
+14.1.2023, 18:41:15 - DEBUG - Getting Toys 
+14.1.2023, 18:41:15 - DEBUG - Getting Toys 
+14.1.2023, 18:41:15 - INFO - Req was made 
+14.1.2023, 18:41:15 - DEBUG - Getting Toys 
+14.1.2023, 18:41:15 - INFO - Req was made 
+14.1.2023, 18:41:17 - DEBUG - Getting Toys 
+14.1.2023, 18:41:17 - INFO - Req was made 
+14.1.2023, 18:41:17 - DEBUG - Getting Toys 
+14.1.2023, 18:41:17 - INFO - Req was made 
+14.1.2023, 18:41:18 - INFO - Req was made 
+14.1.2023, 18:41:18 - DEBUG - Getting Toys 
+14.1.2023, 18:41:28 - INFO - Server is running on port: 3030 
+14.1.2023, 18:41:50 - INFO - Req was made 
+14.1.2023, 18:41:50 - DEBUG - Getting Toys 
+14.1.2023, 18:41:50 - INFO - Req was made 
+14.1.2023, 18:41:50 - DEBUG - Getting Toys 
+14.1.2023, 18:41:51 - INFO - Req was made 
+14.1.2023, 18:41:51 - DEBUG - Getting Toys 
+14.1.2023, 18:41:58 - DEBUG - auth.service - login with username: muki 
+14.1.2023, 18:41:58 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+14.1.2023, 18:42:08 - WARN - muki attempted to perform admin action 
+14.1.2023, 18:48:28 - DEBUG - Getting Toys 
+14.1.2023, 18:48:28 - INFO - Req was made 
+14.1.2023, 18:48:28 - INFO - Req was made 
+14.1.2023, 18:48:28 - DEBUG - Getting Toys 
+14.1.2023, 18:48:28 - INFO - Req was made 
+14.1.2023, 18:48:28 - DEBUG - Getting Toys 
+14.1.2023, 18:48:30 - INFO - Req was made 
+14.1.2023, 18:48:30 - DEBUG - Getting Toys 
+14.1.2023, 18:48:30 - INFO - Req was made 
+14.1.2023, 18:48:30 - DEBUG - Getting Toys 
+14.1.2023, 18:48:31 - DEBUG - Getting Toys 
+14.1.2023, 18:48:31 - INFO - Req was made 
+14.1.2023, 18:48:40 - WARN - muki attempted to perform admin action 
+14.1.2023, 18:49:40 - WARN - muki attempted to perform admin action 
+14.1.2023, 18:49:43 - INFO - Req was made 
+14.1.2023, 18:49:43 - DEBUG - Getting Toys 
+14.1.2023, 18:49:43 - INFO - Req was made 
+14.1.2023, 18:49:43 - DEBUG - Getting Toys 
+14.1.2023, 18:49:43 - INFO - Req was made 
+14.1.2023, 18:49:43 - DEBUG - Getting Toys 
+14.1.2023, 18:49:52 - DEBUG - auth.service - login with username: Batel 
+14.1.2023, 18:49:52 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+14.1.2023, 18:50:10 - INFO - Req was made 
+14.1.2023, 18:50:10 - DEBUG - Getting Toys 
+14.1.2023, 18:50:10 - INFO - Req was made 
+14.1.2023, 18:50:10 - DEBUG - Getting Toys 
+14.1.2023, 18:50:10 - INFO - Req was made 
+14.1.2023, 18:50:10 - DEBUG - Getting Toys 
+14.1.2023, 18:51:52 - INFO - Req was made 
+14.1.2023, 18:51:52 - DEBUG - Getting Toys 
+14.1.2023, 18:51:52 - INFO - Req was made 
+14.1.2023, 18:51:52 - DEBUG - Getting Toys 
+14.1.2023, 18:51:52 - INFO - Req was made 
+14.1.2023, 18:51:52 - DEBUG - Getting Toys 
+14.1.2023, 18:52:08 - INFO - Req was made 
+14.1.2023, 18:52:08 - DEBUG - Getting Toys 
+14.1.2023, 18:52:08 - DEBUG - Getting Toys 
+14.1.2023, 18:52:08 - INFO - Req was made 
+14.1.2023, 18:52:08 - DEBUG - Getting Toys 
+14.1.2023, 18:52:08 - INFO - Req was made 
+14.1.2023, 19:42:41 - INFO - Req was made 
+14.1.2023, 19:42:41 - DEBUG - Getting Toys 
+14.1.2023, 19:42:41 - INFO - Req was made 
+14.1.2023, 19:42:41 - DEBUG - Getting Toys 
+14.1.2023, 19:42:42 - INFO - Req was made 
+14.1.2023, 19:42:42 - DEBUG - Getting Toys 
+14.1.2023, 19:51:00 - INFO - Req was made 
+14.1.2023, 19:51:00 - DEBUG - Getting Toys 
+14.1.2023, 19:51:00 - INFO - Req was made 
+14.1.2023, 19:51:00 - DEBUG - Getting Toys 
+14.1.2023, 19:51:00 - INFO - Req was made 
+14.1.2023, 19:51:00 - DEBUG - Getting Toys 
+14.1.2023, 19:51:21 - INFO - Req was made 
+14.1.2023, 19:51:21 - DEBUG - Getting Toys 
+14.1.2023, 19:51:21 - DEBUG - Getting Toys 
+14.1.2023, 19:51:21 - INFO - Req was made 
+14.1.2023, 19:51:21 - INFO - Req was made 
+14.1.2023, 19:51:21 - DEBUG - Getting Toys 
+14.1.2023, 20:10:37 - DEBUG - Getting Toys 
+14.1.2023, 20:10:37 - INFO - Req was made 
+14.1.2023, 20:10:37 - INFO - Req was made 
+14.1.2023, 20:10:37 - DEBUG - Getting Toys 
+14.1.2023, 20:10:37 - INFO - Req was made 
+14.1.2023, 20:10:37 - DEBUG - Getting Toys 
+14.1.2023, 20:10:37 - DEBUG - Getting Toys 
+14.1.2023, 20:10:37 - INFO - Req was made 
+14.1.2023, 20:10:37 - DEBUG - Getting Toys 
+14.1.2023, 20:10:37 - INFO - Req was made 
+14.1.2023, 20:10:37 - INFO - Req was made 
+14.1.2023, 20:10:37 - DEBUG - Getting Toys 
+14.1.2023, 20:11:51 - INFO - Req was made 
+14.1.2023, 20:11:51 - DEBUG - Getting Toys 
+14.1.2023, 20:11:51 - DEBUG - Getting Toys 
+14.1.2023, 20:11:51 - INFO - Req was made 
+14.1.2023, 20:12:19 - INFO - Req was made 
+14.1.2023, 20:12:19 - DEBUG - Getting Toys 
+14.1.2023, 20:12:19 - INFO - Req was made 
+14.1.2023, 20:12:19 - DEBUG - Getting Toys 
+14.1.2023, 20:12:19 - DEBUG - Getting Toys 
+14.1.2023, 20:12:19 - INFO - Req was made 
+14.1.2023, 20:13:36 - INFO - Server is running on port: 3030 
+14.1.2023, 20:14:11 - INFO - Server is running on port: 3030 
+14.1.2023, 20:14:26 - INFO - Server is running on port: 3030 
+14.1.2023, 20:14:34 - INFO - Server is running on port: 3030 
+14.1.2023, 20:14:37 - INFO - Req was made 
+14.1.2023, 20:14:37 - DEBUG - Getting Toys 
+14.1.2023, 20:14:37 - INFO - Req was made 
+14.1.2023, 20:14:37 - DEBUG - Getting Toys 
+14.1.2023, 20:14:37 - INFO - Req was made 
+14.1.2023, 20:14:37 - DEBUG - Getting Toys 
+14.1.2023, 20:25:04 - INFO - Server is running on port: 3030 
+14.1.2023, 20:26:50 - INFO - Server is running on port: 3030 
+14.1.2023, 20:29:30 - INFO - Server is running on port: 3030 
+14.1.2023, 20:29:33 - INFO - Server is running on port: 3030 
+14.1.2023, 20:29:54 - INFO - Server is running on port: 3030 
+14.1.2023, 20:30:17 - INFO - Server is running on port: 3030 
+14.1.2023, 20:31:27 - INFO - Server is running on port: 3030 
+14.1.2023, 20:35:11 - INFO - Server is running on port: 3030 
+14.1.2023, 20:35:12 - INFO - Server is running on port: 3030 
+14.1.2023, 20:45:17 - INFO - Server is running on port: 3030 
+14.1.2023, 20:46:05 - INFO - Server is running on port: 3030 
+14.1.2023, 21:13:57 - INFO - Server is running on port: 3030 
+14.1.2023, 22:32:42 - INFO - Req was made 
+14.1.2023, 22:32:42 - DEBUG - Getting Toys 
+14.1.2023, 22:32:42 - INFO - Req was made 
+14.1.2023, 22:32:42 - DEBUG - Getting Toys 
+14.1.2023, 22:32:42 - INFO - Req was made 
+14.1.2023, 22:32:42 - DEBUG - Getting Toys 
+14.1.2023, 22:32:50 - INFO - Req was made 
+14.1.2023, 22:32:50 - DEBUG - Getting Toys 
+14.1.2023, 22:35:35 - DEBUG - Getting Toys 
+14.1.2023, 22:35:35 - INFO - Req was made 
+14.1.2023, 22:35:35 - INFO - Req was made 
+14.1.2023, 22:35:35 - DEBUG - Getting Toys 
+14.1.2023, 22:35:36 - INFO - Req was made 
+14.1.2023, 22:35:36 - DEBUG - Getting Toys 
+14.1.2023, 22:37:56 - INFO - Req was made 
+14.1.2023, 22:37:56 - DEBUG - Getting Toys 
+14.1.2023, 22:37:56 - INFO - Req was made 
+14.1.2023, 22:37:56 - DEBUG - Getting Toys 
+14.1.2023, 22:37:56 - DEBUG - Getting Toys 
+14.1.2023, 22:37:56 - INFO - Req was made 
+14.1.2023, 22:39:34 - DEBUG - Getting Toys 
+14.1.2023, 22:39:34 - INFO - Req was made 
+14.1.2023, 22:39:34 - INFO - Req was made 
+14.1.2023, 22:39:34 - DEBUG - Getting Toys 
+14.1.2023, 22:39:34 - INFO - Req was made 
+14.1.2023, 22:39:34 - DEBUG - Getting Toys 
+14.1.2023, 22:40:01 - INFO - Req was made 
+14.1.2023, 22:40:01 - DEBUG - Getting Toys 
+14.1.2023, 22:40:01 - DEBUG - Getting Toys 
+14.1.2023, 22:40:01 - INFO - Req was made 
+14.1.2023, 22:40:01 - INFO - Req was made 
+14.1.2023, 22:40:01 - DEBUG - Getting Toys 
+14.1.2023, 22:45:23 - INFO - Req was made 
+14.1.2023, 22:45:23 - DEBUG - Getting Toys 
+14.1.2023, 22:45:23 - INFO - Req was made 
+14.1.2023, 22:45:23 - DEBUG - Getting Toys 
+14.1.2023, 22:45:23 - INFO - Req was made 
+14.1.2023, 22:45:23 - DEBUG - Getting Toys 
+14.1.2023, 22:48:45 - INFO - Req was made 
+14.1.2023, 22:48:45 - DEBUG - Getting Toys 
+14.1.2023, 22:48:45 - DEBUG - Getting Toys 
+14.1.2023, 22:48:45 - INFO - Req was made 
+14.1.2023, 22:48:45 - INFO - Req was made 
+14.1.2023, 22:48:45 - DEBUG - Getting Toys 

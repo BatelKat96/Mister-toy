@@ -10,8 +10,13 @@
         grid-template-rows: 4fr 1fr;
         align-items: center;
         // justify-items: center;
-        border: 2px black solid;
+        border: 2px $bgc1 solid;
+        border-radius: 20px;
         padding: 10px;
+
+        &:hover {
+            box-shadow: 0px 0px 7px 1px #c2c3c3;
+        }
 
         .btn-option-section {
             justify-self: center;

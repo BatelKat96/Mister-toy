@@ -39,7 +39,7 @@ export function AppHeader() {
 
             {user && <section className="user-info">
                 <p>{user.fullname}</p>
-                <button onClick={onLogout}>Logout</button>
+                <button onClick={onLogout} className="btn clean-btn">Logout</button>
             </section>}
 
             {!user && <section className="user-info">

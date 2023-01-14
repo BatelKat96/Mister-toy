@@ -1,20 +1,35 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import { ToyMsgs } from '../cmp/toy-msg'
 import { showErrorMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
+import { utilService } from '../services/util.service'
 
 
 export function ToysDetails() {
 
     const [toy, setToy] = useState(null)
+    const [msg, setMsg] = useState('')
     const { toyId } = useParams()
     const navigate = useNavigate()
 
     useEffect(() => {
-
         loadToy()
     }, [])
 
+    useEffect(() => {
+        loadMsg()
+    }, [setMsg])
+
+    async function loadMsg() {
+        try {
+            const toy = await toyService.getById(toyId)
+            setMsg(toy.msgs)
+
+        } catch (err) {
+            showErrorMsg('Cannot load msg')
+        }
+    }
     async function loadToy() {
         try {
             const toy = await toyService.getById(toyId)
@@ -25,6 +40,33 @@ export function ToysDetails() {
             navigate('/toy')
         }
     }
+
+
+    function handleChange({ target }) {
+        let { value, type, name: field } = target
+        value = type === 'number' ? +value : value
+        setMsg((prevToy) => ({ ...prevToy, [field]: value }))
+    }
+
+    async function onAddToyMsg(ev) {
+        ev.preventDefault()
+        console.log('msg:', msg)
+
+        const savedMsg = await toyService.addToyMsg(toyId, msg)
+        setMsg('')
+        render('Saved Msg', savedMsg)
+    }
+
+    function render(title, mix = '') {
+        console.log(title, mix)
+        const output = utilService.prettyJSON(mix)
+        console.log('output:', output)
+
+        document.querySelector('h2').innerText = title
+        document.querySelector('pre').innerHTML = output.txt
+    }
+
+
 
     if (!toy) return <h1 className='loading'>Loadings....</h1>
     return toy && <div className='flex-grow main-layout toy-details'>
@@ -43,10 +85,27 @@ export function ToysDetails() {
         {/* <ul><span className='labels-headline'>Labels:</span>
             {toy.labels.map(label => <li className='labels-li' key={`${toy._id} + ${label}`}>{label}</li>)}
         </ul> */}
+        <div className='add-msg-section'>
+            <form onSubmit={onAddToyMsg}>
+                <label htmlFor="toyMsg">Add toy msg:</label>
+                <input type="text"
+                    name="toyMsg"
+                    id="toyMsg"
+                    value={msg.txt}
+                    onChange={handleChange}
+                />
+
+                <button className='btn clean-btn'>Add</button>
+            </form>
+        </div>
+
+        <hr />
+        <div className='show-msg-section'>
+            {(!toy.msgs) ? <h3>No msgs yet</h3> : <ToyMsgs toy={toy} />}
+        </div>
+
         <div className='btn-back'>
             <Link to="/toy" className="btn">Back to List</Link>
         </div>
-
-
     </div >
 }

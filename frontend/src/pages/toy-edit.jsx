@@ -49,16 +49,17 @@ export function ToyEdit() {
             const savedToy = await saveToy(toy)
             console.log('savedToy add after action:', savedToy)
 
-            showSuccessMsg(`Toy edited (id: ${savedToy._id})`)
+            showSuccessMsg((!toyId) ? 'Toy added' : `Toy edited (id: ${savedToy._id})`)
             navigate('/toy')
         } catch (err) {
-            showErrorMsg('Cannot change toy status', err)
+            showErrorMsg((!toyId) ? 'Cannot add toy' : 'Cannot change toy status', err)
+            navigate('/toy')
         }
     }
 
     if (!toy) return <h1 className='loading'>Loadings....</h1>
     return <div className='flex-grow main-layout toy-edit'>
-        <h2>Toy Edit 🐛</h2>
+        {(!toyId) ? <h2>Add toy </h2> : <h2>Toy Edit </h2>}
         <br />
         <form onSubmit={onSaveEdit}>
 

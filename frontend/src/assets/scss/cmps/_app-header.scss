@@ -1,7 +1,6 @@
 header {
-    background: rgb(45, 44, 110);
-    border-bottom: 2px solid white;
-    color: aliceblue;
+    background: $bgc1;
+    color: $clr1;
     margin-bottom: 20px;
 
     .app-header {
@@ -20,11 +19,11 @@ header {
             font-size: 1.25em;
 
             &:active {
-                color: rgb(146, 177, 255);
+                color: $hc1;
             }
 
             &.active {
-                color: rgb(146, 177, 255);
+                color: $hc1;
                 font-weight: bold;
                 text-decoration: underline;
             }

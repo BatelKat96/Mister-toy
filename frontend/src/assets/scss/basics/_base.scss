@@ -50,10 +50,10 @@ img {
 
 button.btn,
 .btn {
-    background-color: rgb(110, 139, 214);
+    background-color: $bgc2;
     padding: 10px;
     border-radius: 10px;
-    color: aliceblue;
+    color: $clr1;
     margin-inline-end: 5px;
     font-size: 0.9em;
 }

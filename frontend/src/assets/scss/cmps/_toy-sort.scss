@@ -12,6 +12,13 @@
     display: flex;
     align-items: center;
 
+    select {
+        border-radius: 10px;
+        background-color: $clr1;
+        border: none;
+        font-family: inherit;
+    }
+
     >* {
         padding: 10px;
     }

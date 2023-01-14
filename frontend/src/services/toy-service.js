@@ -1,10 +1,11 @@
 import { httpService } from './http.service'
+import { userService } from './user.service'
 import { utilService } from './util.service'
 
 const labels = ["On wheels", "Box game", "Art", "Baby",
     "Doll", "Puzzle", "Outdoor", "Battery Powered"]
 
-const STORAGE_TOYS_KEY = 'toyDB'
+// const STORAGE_TOYS_KEY = 'toyDB'
 // _createToys()
 // const BASE_URL = 'toy'
 export const toyService = {
@@ -14,7 +15,8 @@ export const toyService = {
     save,
     getDefaultFilter,
     getDefaultSort,
-    getEmptyToy
+    getEmptyToy,
+    addToyMsg
 }
 
 async function query(filterBy) {
@@ -50,6 +52,7 @@ async function save(toy) {
 }
 
 
+
 function getEmptyToy(toyName, price, labels, inStock = true) {
     return { toyName, price, labels, inStock }
 }
@@ -62,6 +65,29 @@ function getDefaultSort() {
     return { sortByCat: '', desc: 1 }
 }
 
+async function addToyMsg(toyId, txt) {
+    // console.log('txt:', txt.toyMsg)
+    const { toyMsg } = txt
+    console.log('toyMsg:', toyMsg)
+
+    // Later, this is all done by the backend
+    const toy = await getById(toyId)
+    if (!toy.msgs) toy.msgs = []
+
+    const msg = {
+        _id: utilService.makeId(),
+        by: userService.getLoggedinUser(),
+        txt: toyMsg
+    }
+    toy.msgs.push(msg)
+    console.log('toy:', toy)
+    console.log('toyMsgss:', toyMsg)
+
+    const savedMsg = await httpService.post(`toy/${toyId}/msg`, { toyMsg })
+    console.log('savedMsg:', savedMsg)
+
+    return savedMsg
+}
 
 // function _createToys() {
 //     let toys = utilService.loadFromStorage(STORAGE_TOYS_KEY)
