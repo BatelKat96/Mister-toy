@@ -38,7 +38,7 @@ export function AppHeader() {
             </Link>
 
             {user && <section className="user-info">
-                <p>{user.fullname} <span>${user.score.toLocaleString()}</span></p>
+                <p>{user.fullname}</p>
                 <button onClick={onLogout}>Logout</button>
             </section>}
 

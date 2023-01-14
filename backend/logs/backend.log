@@ -1,0 +1,188 @@
+13.1.2023, 15:39:00 - INFO - Server is running on port: 3030 
+13.1.2023, 15:39:11 - INFO - Server is running on port: 3030 
+13.1.2023, 15:43:52 - INFO - Server is running on port: 3030 
+13.1.2023, 15:46:02 - INFO - Server is running on port: 3030 
+13.1.2023, 15:46:10 - INFO - Server is running on port: 3030 
+13.1.2023, 15:46:21 - INFO - Server is running on port: 3030 
+13.1.2023, 15:46:49 - INFO - Server is running on port: 3030 
+13.1.2023, 15:46:52 - INFO - Server is running on port: 3030 
+13.1.2023, 15:47:01 - INFO - Server is running on port: 3030 
+13.1.2023, 15:47:04 - INFO - Server is running on port: 3030 
+13.1.2023, 15:47:14 - INFO - Server is running on port: 3030 
+13.1.2023, 15:47:34 - INFO - Server is running on port: 3030 
+13.1.2023, 15:48:03 - INFO - Server is running on port: 3030 
+13.1.2023, 15:48:13 - INFO - Server is running on port: 3030 
+13.1.2023, 15:48:26 - INFO - Req was made 
+13.1.2023, 15:48:26 - DEBUG - Getting Toys 
+13.1.2023, 15:48:26 - INFO - Req was made 
+13.1.2023, 15:48:26 - DEBUG - Getting Toys 
+13.1.2023, 15:48:27 - INFO - Req was made 
+13.1.2023, 15:48:27 - DEBUG - Getting Toys 
+13.1.2023, 15:48:40 - ERROR - Failed to add toy | ReferenceError: loggedinUser is not defined 
+13.1.2023, 15:49:25 - INFO - Server is running on port: 3030 
+13.1.2023, 15:49:26 - INFO - Req was made 
+13.1.2023, 15:49:26 - DEBUG - Getting Toys 
+13.1.2023, 15:49:26 - INFO - Req was made 
+13.1.2023, 15:49:26 - DEBUG - Getting Toys 
+13.1.2023, 15:49:27 - INFO - Req was made 
+13.1.2023, 15:49:27 - DEBUG - Getting Toys 
+13.1.2023, 15:49:57 - INFO - Server is running on port: 3030 
+13.1.2023, 15:50:04 - INFO - Req was made 
+13.1.2023, 15:50:04 - DEBUG - Getting Toys 
+13.1.2023, 15:50:04 - INFO - Req was made 
+13.1.2023, 15:50:04 - DEBUG - Getting Toys 
+13.1.2023, 15:50:04 - DEBUG - Getting Toys 
+13.1.2023, 15:50:04 - INFO - Req was made 
+13.1.2023, 15:51:35 - INFO - Server is running on port: 3030 
+13.1.2023, 15:51:38 - INFO - Req was made 
+13.1.2023, 15:51:38 - DEBUG - Getting Toys 
+13.1.2023, 15:51:38 - INFO - Req was made 
+13.1.2023, 15:51:38 - DEBUG - Getting Toys 
+13.1.2023, 15:51:38 - INFO - Req was made 
+13.1.2023, 15:51:38 - DEBUG - Getting Toys 
+13.1.2023, 15:51:51 - INFO - Server is running on port: 3030 
+13.1.2023, 15:51:55 - DEBUG - Getting Toys 
+13.1.2023, 15:51:55 - INFO - Req was made 
+13.1.2023, 15:51:55 - INFO - Req was made 
+13.1.2023, 15:51:55 - DEBUG - Getting Toys 
+13.1.2023, 15:51:55 - DEBUG - Getting Toys 
+13.1.2023, 15:51:55 - INFO - Req was made 
+13.1.2023, 15:52:15 - INFO - Server is running on port: 3030 
+13.1.2023, 15:52:20 - INFO - Req was made 
+13.1.2023, 15:52:20 - DEBUG - Getting Toys 
+13.1.2023, 15:52:20 - INFO - Req was made 
+13.1.2023, 15:52:20 - DEBUG - Getting Toys 
+13.1.2023, 15:52:20 - DEBUG - Getting Toys 
+13.1.2023, 15:52:20 - INFO - Req was made 
+13.1.2023, 15:53:37 - INFO - Server is running on port: 3030 
+13.1.2023, 15:53:42 - INFO - Req was made 
+13.1.2023, 15:53:42 - DEBUG - Getting Toys 
+13.1.2023, 15:53:42 - INFO - Req was made 
+13.1.2023, 15:53:42 - DEBUG - Getting Toys 
+13.1.2023, 15:53:42 - INFO - Req was made 
+13.1.2023, 15:53:42 - DEBUG - Getting Toys 
+13.1.2023, 15:54:01 - INFO - Server is running on port: 3030 
+13.1.2023, 15:54:04 - INFO - Req was made 
+13.1.2023, 15:54:04 - DEBUG - Getting Toys 
+13.1.2023, 15:54:04 - DEBUG - Getting Toys 
+13.1.2023, 15:54:04 - INFO - Req was made 
+13.1.2023, 15:54:04 - INFO - Req was made 
+13.1.2023, 15:54:04 - DEBUG - Getting Toys 
+13.1.2023, 15:55:00 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:39 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:42 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:47 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:50 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:52 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:55 - INFO - Server is running on port: 3030 
+13.1.2023, 15:56:58 - INFO - Server is running on port: 3030 
+13.1.2023, 15:57:21 - INFO - Req was made 
+13.1.2023, 15:57:21 - DEBUG - Getting Toys 
+13.1.2023, 15:57:21 - INFO - Req was made 
+13.1.2023, 15:57:21 - DEBUG - Getting Toys 
+13.1.2023, 15:57:21 - INFO - Req was made 
+13.1.2023, 15:57:21 - DEBUG - Getting Toys 
+13.1.2023, 15:59:41 - INFO - Req was made 
+13.1.2023, 15:59:41 - DEBUG - Getting Toys 
+13.1.2023, 15:59:41 - INFO - Req was made 
+13.1.2023, 15:59:41 - DEBUG - Getting Toys 
+13.1.2023, 15:59:42 - INFO - Req was made 
+13.1.2023, 15:59:42 - DEBUG - Getting Toys 
+13.1.2023, 16:03:15 - INFO - Server is running on port: 3030 
+13.1.2023, 16:03:16 - INFO - Server is running on port: 3030 
+13.1.2023, 16:11:24 - DEBUG -  MAMA MA, MAMA, 1234 
+13.1.2023, 16:11:24 - DEBUG - auth.service - signup with username: MAMA, fullname:  MAMA MA 
+13.1.2023, 16:11:24 - DEBUG - auth.route - new account created: {"username":"MAMA","password":"$2b$10$rhj9Vhx00kJ9Y1X2ZlbJ7uaUR1AwQ4UZanGQCDTTJRrhrf0DJ1C0a","fullname":" MAMA MA","isAdmin":false,"_id":"63c1668cf2260fdac03cfa08"} 
+13.1.2023, 16:11:24 - DEBUG - auth.service - login with username: MAMA 
+13.1.2023, 16:11:24 - INFO - User login:  | {"_id":"63c1668cf2260fdac03cfa08","username":"MAMA","fullname":" MAMA MA","isAdmin":false} 
+13.1.2023, 16:12:44 - DEBUG - auth.service - login with username: MAMA 
+13.1.2023, 16:12:44 - INFO - User login:  | {"_id":"63c1668cf2260fdac03cfa08","username":"MAMA","fullname":" MAMA MA","isAdmin":false} 
+13.1.2023, 16:13:22 - INFO - Req was made 
+13.1.2023, 16:13:22 - DEBUG - Getting Toys 
+13.1.2023, 16:13:22 - INFO - Req was made 
+13.1.2023, 16:13:22 - DEBUG - Getting Toys 
+13.1.2023, 16:13:22 - INFO - Req was made 
+13.1.2023, 16:13:22 - DEBUG - Getting Toys 
+13.1.2023, 16:13:26 - DEBUG - Getting Toys 
+13.1.2023, 16:13:26 - INFO - Req was made 
+13.1.2023, 16:13:26 - INFO - Req was made 
+13.1.2023, 16:13:26 - DEBUG - Getting Toys 
+13.1.2023, 16:13:26 - INFO - Req was made 
+13.1.2023, 16:13:26 - DEBUG - Getting Toys 
+13.1.2023, 16:14:04 - INFO - Server is running on port: 3030 
+13.1.2023, 16:16:00 - INFO - Req was made 
+13.1.2023, 16:16:00 - DEBUG - Getting Toys 
+13.1.2023, 16:17:06 - DEBUG - lolo lo, lolo, 1234 
+13.1.2023, 16:17:06 - DEBUG - auth.service - signup with username: lolo, fullname: lolo lo 
+13.1.2023, 16:17:06 - DEBUG - auth.route - new account created: {"username":"lolo","password":"$2b$10$lqyDVajUtzmndi27JD6ca.pgZwKPJLhv3yleSS866togx1HYjbVXm","fullname":"lolo lo","isAdmin":false,"_id":"63c167e28bd8c31ddc0145d4"} 
+13.1.2023, 16:17:06 - DEBUG - auth.service - login with username: lolo 
+13.1.2023, 16:17:06 - INFO - User login:  | {"_id":"63c167e28bd8c31ddc0145d4","username":"lolo","fullname":"lolo lo","isAdmin":false} 
+13.1.2023, 16:17:48 - DEBUG - auth.service - login with username: lolo 
+13.1.2023, 16:17:48 - INFO - User login:  | {"_id":"63c167e28bd8c31ddc0145d4","username":"lolo","fullname":"lolo lo","isAdmin":false} 
+13.1.2023, 16:18:13 - DEBUG - jfkf, muki, muki1 
+13.1.2023, 16:18:13 - DEBUG - auth.service - signup with username: muki, fullname: jfkf 
+13.1.2023, 16:18:13 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$7FPfr9kWm8TAZ4z/HI9K3O.XbCNyheOX35P19qoLWcydVXpOYhKla","fullname":"jfkf","isAdmin":false,"_id":"63c168258bd8c31ddc0145d5"} 
+13.1.2023, 16:18:13 - DEBUG - auth.service - login with username: muki 
+13.1.2023, 16:18:13 - ERROR - Failed to signup Invalid username or password 
+13.1.2023, 16:18:19 - DEBUG - jfkf, muki7, muki1 
+13.1.2023, 16:18:19 - DEBUG - auth.service - signup with username: muki7, fullname: jfkf 
+13.1.2023, 16:18:19 - DEBUG - auth.route - new account created: {"username":"muki7","password":"$2b$10$qA5hkNH/wAKClIt3Si43d.c36Rf6yIV0f9VXJBQKyzajtulbOpo6K","fullname":"jfkf","isAdmin":false,"_id":"63c1682b8bd8c31ddc0145d6"} 
+13.1.2023, 16:18:19 - DEBUG - auth.service - login with username: muki7 
+13.1.2023, 16:18:19 - INFO - User login:  | {"_id":"63c1682b8bd8c31ddc0145d6","username":"muki7","fullname":"jfkf","isAdmin":false} 
+13.1.2023, 16:19:51 - INFO - Server is running on port: 3030 
+13.1.2023, 16:20:00 - INFO - Server is running on port: 3030 
+13.1.2023, 16:20:04 - DEBUG - auth.service - login with username: muki 
+13.1.2023, 16:20:04 - ERROR - Failed to Login Invalid username or password 
+13.1.2023, 16:20:19 - DEBUG - mnnm, mnm, 1234 
+13.1.2023, 16:20:19 - DEBUG - auth.service - signup with username: mnm, fullname: mnnm 
+13.1.2023, 16:20:20 - DEBUG - auth.route - new account created: {"username":"mnm","password":"$2b$10$WVMY78gBg5Kdet9Jy3rW5e5LUKuYoqvEvcfCSfzpFQJAwDk7/Jeb6","fullname":"mnnm","isAdmin":false,"_id":"63c168a4be3bc79b63f88258"} 
+13.1.2023, 16:20:20 - DEBUG - auth.service - login with username: mnm 
+13.1.2023, 16:20:20 - INFO - User login:  | {"_id":"63c168a4be3bc79b63f88258","username":"mnm","fullname":"mnnm","imgUrl":null,"isAdmin":false} 
+13.1.2023, 16:21:25 - INFO - Server is running on port: 3030 
+13.1.2023, 16:23:53 - INFO - Server is running on port: 3030 
+13.1.2023, 16:23:57 - INFO - Server is running on port: 3030 
+13.1.2023, 16:23:59 - INFO - Server is running on port: 3030 
+13.1.2023, 16:24:01 - INFO - Server is running on port: 3030 
+13.1.2023, 16:24:03 - INFO - Server is running on port: 3030 
+13.1.2023, 16:24:15 - DEBUG - 222, mukidd, muki1 
+13.1.2023, 16:24:15 - DEBUG - auth.service - signup with username: mukidd, fullname: 222 
+13.1.2023, 16:24:15 - DEBUG - auth.route - new account created: {"username":"mukidd","password":"$2b$10$XmMyZIMf9K6ngpUHXbEFjut92DLOkPLgkRCep/cHLeWRHeX2J9iBy","fullname":"222","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false,"_id":"63c1698f49f7cefa9a611e29"} 
+13.1.2023, 16:24:15 - DEBUG - auth.service - login with username: mukidd 
+13.1.2023, 16:24:15 - INFO - User login:  | {"_id":"63c1698f49f7cefa9a611e29","username":"mukidd","fullname":"222","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+13.1.2023, 16:25:29 - DEBUG - Batel kat, Batel, 1234 
+13.1.2023, 16:25:29 - DEBUG - auth.service - signup with username: Batel, fullname: Batel kat 
+13.1.2023, 16:25:29 - DEBUG - auth.route - new account created: {"username":"Batel","password":"$2b$10$OZLMi8GaD94WZ6PgHCRfeeblxuNq86dgoUI09P7jLT0wPl4Ml5RPa","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false,"_id":"63c169d949f7cefa9a611e2a"} 
+13.1.2023, 16:25:29 - DEBUG - auth.service - login with username: Batel 
+13.1.2023, 16:25:29 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+13.1.2023, 16:26:11 - INFO - Server is running on port: 3030 
+13.1.2023, 16:26:41 - INFO - Server is running on port: 3030 
+13.1.2023, 16:27:27 - DEBUG - muki, muki, muki1 
+13.1.2023, 16:27:27 - DEBUG - auth.service - signup with username: muki, fullname: muki 
+13.1.2023, 16:27:27 - DEBUG - auth.route - new account created: {"username":"muki","password":"$2b$10$3Q4Tbvr4ItdtwCHrZ13O/uPpha3a2rpmmYCtoybAi6nkfjg21R.Iy","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false,"_id":"63c16a4fe6bf3c29e32ed9d0"} 
+13.1.2023, 16:27:27 - DEBUG - auth.service - login with username: muki 
+13.1.2023, 16:27:27 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+13.1.2023, 16:27:35 - INFO - Server is running on port: 3030 
+13.1.2023, 16:27:43 - INFO - Server is running on port: 3030 
+13.1.2023, 16:28:00 - INFO - Req was made 
+13.1.2023, 16:28:00 - DEBUG - Getting Toys 
+13.1.2023, 16:28:00 - INFO - Req was made 
+13.1.2023, 16:28:00 - DEBUG - Getting Toys 
+13.1.2023, 16:28:00 - INFO - Req was made 
+13.1.2023, 16:28:00 - DEBUG - Getting Toys 
+13.1.2023, 16:28:08 - INFO - Req was made 
+13.1.2023, 16:28:08 - DEBUG - Getting Toys 
+13.1.2023, 16:28:08 - INFO - Req was made 
+13.1.2023, 16:28:08 - DEBUG - Getting Toys 
+13.1.2023, 16:28:08 - INFO - Req was made 
+13.1.2023, 16:28:08 - DEBUG - Getting Toys 
+13.1.2023, 16:28:14 - WARN - mukiattempted to perform admin action 
+13.1.2023, 16:29:08 - DEBUG - auth.service - login with username: Batel 
+13.1.2023, 16:29:08 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+13.1.2023, 16:29:20 - INFO - Server is running on port: 3030 
+14.1.2023, 18:21:22 - INFO - Server is running on port: 3030 
+14.1.2023, 18:22:03 - INFO - Req was made 
+14.1.2023, 18:22:03 - DEBUG - Getting Toys 
+14.1.2023, 18:22:03 - INFO - Req was made 
+14.1.2023, 18:22:03 - DEBUG - Getting Toys 
+14.1.2023, 18:22:03 - INFO - Req was made 
+14.1.2023, 18:22:03 - DEBUG - Getting Toys 

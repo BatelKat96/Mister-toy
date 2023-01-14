@@ -41,8 +41,9 @@ async function signup(userCred) {
     console.log('userCred:', userCred)
 
     if (!userCred.imgUrl) userCred.imgUrl = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'
+
     const user = await httpService.post('auth/signup', userCred)
-    console.log('user:', user)
+    console.log('userVVVV:', user)
 
     return saveLocalUser(user)
 }
@@ -58,7 +59,7 @@ function getLoggedinUser() {
 }
 
 function saveLocalUser(user) {
-    user = { _id: user._id, fullname: user.fullname, imgUrl: user.imgUrl, score: user.score }
+    user = { _id: user._id, fullname: user.fullname, imgUrl: user.imgUrl }
     sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
     return user
 }

@@ -1,5 +1,5 @@
 const dbService = require('../../services/db.service')
-// const logger = require('../../services/logger.service')
+const logger = require('../../services/logger.service')
 const utilService = require('../../services/util.service')
 const ObjectId = require('mongodb').ObjectId
 
@@ -25,7 +25,7 @@ async function query(filterBy) {
         })
         return toys
     } catch (err) {
-        // logger.error('cannot find toys', err)
+        logger.error('cannot find toys', err)
         throw err
     }
 }
@@ -36,7 +36,7 @@ async function getById(toyId) {
         const toy = collection.findOne({ _id: ObjectId(toyId) })
         return toy
     } catch (err) {
-        // logger.error(`while finding toy ${toyId}`, err)
+        logger.error(`while finding toy ${toyId}`, err)
         throw err
     }
 }
@@ -47,7 +47,7 @@ async function remove(toyId) {
         await collection.deleteOne({ _id: ObjectId(toyId) })
         return toyId
     } catch (err) {
-        // logger.error(`cannot remove toy ${toyId}`, err)
+        logger.error(`cannot remove toy ${toyId}`, err)
         throw err
     }
 }
@@ -58,14 +58,13 @@ async function add(toy) {
         await collection.insertOne(toy)
         return toy
     } catch (err) {
-        // logger.error('cannot insert toy', err)
+        logger.error('cannot insert toy', err)
         throw err
     }
 }
 
 async function update(toy) {
-    console.log('toy:', toy)
-
+    // console.log('toy:', toy)
     try {
         const toyToSave = {
             toyName: toy.toyName,
@@ -74,11 +73,11 @@ async function update(toy) {
         }
         const collection = await dbService.getCollection('toys')
         await collection.updateOne({ _id: ObjectId(toy._id) }, { $set: toyToSave })
-        console.log('toy after:', toyToSave)
+        // console.log('toy after:', toyToSave)
 
         return toy
     } catch (err) {
-        // logger.error(`cannot update toy ${toyId}`, err)
+        logger.error(`cannot update toy ${toyId}`, err)
         throw err
     }
 }

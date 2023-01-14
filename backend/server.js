@@ -35,9 +35,9 @@ app.use('/api/toy', toyRoutes)
 
 
 
-// const logger = require('./services/logger.service')
+const logger = require('./services/logger.service')
 const port = process.env.PORT || 3030
 http.listen(port, () => {
-    // logger.info('Server is running on port: ' + port)
+    logger.info('Server is running on port: ' + port)
 })
 
