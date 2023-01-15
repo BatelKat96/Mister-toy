@@ -13,11 +13,11 @@ module.exports = {
 }
 
 async function getToys(req, res) {
-  console.log('req.query.params:', req.query.params)
 
-  const filterByPath = req.query.params.filterBy
 
   try {
+    console.log('req.query.params:', req.query.params)
+    const filterByPath = req.query.params.filterBy
     logger.debug('Getting Toys')
     const filterBy = {
       txt: filterByPath.txt,
