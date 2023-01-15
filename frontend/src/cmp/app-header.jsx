@@ -38,7 +38,10 @@ export function AppHeader() {
             </Link>
 
             {user && <section className="user-info">
-                <p>{user.fullname}</p>
+                <Link to={`user/${user._id}`}>
+                    {user.imgUrl && <img className='user-img' src={user.imgUrl} />}
+                    <p>{user.fullname}</p>
+                </Link>
                 <button onClick={onLogout} className="btn clean-btn">Logout</button>
             </section>}
 

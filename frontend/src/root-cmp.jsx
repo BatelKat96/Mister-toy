@@ -15,6 +15,7 @@ import { AppFooter } from './cmp/app-footer';
 import { AppHeader } from './cmp/app-header';
 import { About } from './pages/about';
 import { Dashboard } from './pages/dashboard';
+import { UserDetails } from './pages/user-details';
 
 
 export function App() {
@@ -32,6 +33,7 @@ export function App() {
               <Route element={<ToysDetails />} path="/toy/:toyId" />
               <Route element={<ToyEdit />} path="/toy/edit" />
               <Route element={<ToyEdit />} path="/toy/edit/:toyId" />
+              <Route element={<UserDetails />} path="user/:userId" />
 
             </Routes>
           </main>

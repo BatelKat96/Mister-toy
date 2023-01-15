@@ -7,7 +7,7 @@ export function ToyMsgs({ toy, onRemoveMsg }) {
         {toy.msgs.map(msg =>
 
             <li className="msg-preview" key={msg.id}>
-                <button onClick={() => onRemoveMsg(msg.id)} className='btn clean-btn'>X</button>
+                <button onClick={() => onRemoveMsg(msg.id)} className='btn clean-btn fa-solid trash'></button>
                 <MsgPreview msg={msg} />
             </li>
         )}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import { ReviewApp } from '../cmp/review-app'
 import { ToyMsgs } from '../cmp/toy-msg'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
@@ -105,7 +106,7 @@ export function ToysDetails() {
         <div className='show-msg-section'>
             {(!toy.msgs) ? <h3>No msgs yet</h3> : <ToyMsgs toy={toy} onRemoveMsg={onRemoveMsg} />}
         </div>
-
+        <ReviewApp toy={toy} />
         <div className='btn-back'>
             <Link to="/toy" className="btn">Back to List</Link>
         </div>

@@ -18,7 +18,8 @@ export const toyService = {
     getEmptyToy,
     addMsgToToy,
     getEmptyMsg,
-    removeToyMsg
+    removeToyMsg,
+    getEmptyReview
 }
 
 async function query(filterBy) {
@@ -65,6 +66,12 @@ function getDefaultSort() {
 }
 
 function getEmptyMsg() {
+    return {
+        id: utilService.makeId(),
+        txt: ''
+    }
+}
+function getEmptyReview() {
     return {
         id: utilService.makeId(),
         txt: ''

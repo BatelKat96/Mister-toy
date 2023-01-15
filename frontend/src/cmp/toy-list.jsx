@@ -10,7 +10,7 @@ export function ToyList({ toys, onRemoveToy }) {
                 <ToyPreview toy={toy} />
 
                 <div className='btn-option-section'>
-                    <button className="clean-btn fa-solid x btn"
+                    <button className="clean-btn fa-solid trash btn"
                         onClick={() => { onRemoveToy(toy._id) }}></button>
                     <Link to={`/toy/edit/${toy._id}`}>
                         <button className="clean-btn btn">Edit</button>

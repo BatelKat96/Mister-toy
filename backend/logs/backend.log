@@ -620,3 +620,163 @@
 15.1.2023, 18:41:41 - DEBUG - Getting Toys 
 15.1.2023, 20:12:55 - INFO - Server is running on port: 3030 
 15.1.2023, 20:13:27 - INFO - Server is running on port: 3030 
+15.1.2023, 20:30:39 - INFO - Req was made 
+15.1.2023, 20:30:39 - DEBUG - Getting Toys 
+15.1.2023, 20:30:39 - INFO - Req was made 
+15.1.2023, 20:30:39 - DEBUG - Getting Toys 
+15.1.2023, 20:30:39 - DEBUG - Getting Toys 
+15.1.2023, 20:30:39 - INFO - Req was made 
+15.1.2023, 21:25:40 - DEBUG - Getting Toys 
+15.1.2023, 21:25:40 - INFO - Req was made 
+15.1.2023, 21:25:40 - INFO - Req was made 
+15.1.2023, 21:25:40 - DEBUG - Getting Toys 
+15.1.2023, 21:25:40 - INFO - Req was made 
+15.1.2023, 21:25:40 - DEBUG - Getting Toys 
+15.1.2023, 21:33:08 - INFO - Req was made 
+15.1.2023, 21:33:08 - DEBUG - Getting Toys 
+15.1.2023, 21:33:08 - DEBUG - Getting Toys 
+15.1.2023, 21:33:08 - INFO - Req was made 
+15.1.2023, 21:33:08 - INFO - Req was made 
+15.1.2023, 21:33:08 - DEBUG - Getting Toys 
+15.1.2023, 21:33:32 - INFO - Req was made 
+15.1.2023, 21:33:32 - DEBUG - Getting Toys 
+15.1.2023, 21:33:32 - INFO - Req was made 
+15.1.2023, 21:33:32 - DEBUG - Getting Toys 
+15.1.2023, 21:33:32 - DEBUG - Getting Toys 
+15.1.2023, 21:33:32 - INFO - Req was made 
+15.1.2023, 21:33:50 - DEBUG - Getting Toys 
+15.1.2023, 21:33:50 - INFO - Req was made 
+15.1.2023, 21:33:50 - INFO - Req was made 
+15.1.2023, 21:33:50 - DEBUG - Getting Toys 
+15.1.2023, 21:33:51 - INFO - Req was made 
+15.1.2023, 21:33:51 - DEBUG - Getting Toys 
+15.1.2023, 21:37:08 - INFO - Req was made 
+15.1.2023, 21:37:08 - DEBUG - Getting Toys 
+15.1.2023, 21:37:08 - INFO - Req was made 
+15.1.2023, 21:37:08 - DEBUG - Getting Toys 
+15.1.2023, 21:37:08 - INFO - Req was made 
+15.1.2023, 21:37:08 - DEBUG - Getting Toys 
+15.1.2023, 21:45:20 - INFO - Req was made 
+15.1.2023, 21:45:20 - DEBUG - Getting Toys 
+15.1.2023, 21:45:20 - INFO - Req was made 
+15.1.2023, 21:45:20 - DEBUG - Getting Toys 
+15.1.2023, 21:45:20 - INFO - Req was made 
+15.1.2023, 21:45:20 - DEBUG - Getting Toys 
+15.1.2023, 21:45:22 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:45:22 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:45:43 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:45:43 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:46:31 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:46:31 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:47:25 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:47:25 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:47:35 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:47:35 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:04 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:04 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:06 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:06 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:38 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:38 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:41 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:48:41 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:49:19 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:49:19 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:49:24 - ERROR - while finding user undefined | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 21:49:24 - ERROR - Failed to get user | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 22:24:57 - INFO - Server is running on port: 3030 
+15.1.2023, 22:25:26 - INFO - Server is running on port: 3030 
+15.1.2023, 22:25:28 - INFO - Server is running on port: 3030 
+15.1.2023, 22:25:34 - INFO - Server is running on port: 3030 
+15.1.2023, 22:25:37 - INFO - Req was made 
+15.1.2023, 22:25:37 - DEBUG - Getting Toys 
+15.1.2023, 22:25:37 - DEBUG - Getting Toys 
+15.1.2023, 22:25:37 - INFO - Req was made 
+15.1.2023, 22:25:38 - DEBUG - Getting Toys 
+15.1.2023, 22:25:38 - INFO - Req was made 
+15.1.2023, 22:43:40 - INFO - Server is running on port: 3030 
+15.1.2023, 22:43:47 - INFO - Server is running on port: 3030 
+15.1.2023, 22:50:09 - INFO - Req was made 
+15.1.2023, 22:50:09 - DEBUG - Getting Toys 
+15.1.2023, 23:00:11 - INFO - Req was made 
+15.1.2023, 23:02:19 - INFO - Req was made 
+15.1.2023, 23:02:24 - INFO - Req was made 
+15.1.2023, 23:09:27 - INFO - Req was made 
+15.1.2023, 23:10:10 - INFO - Req was made 
+15.1.2023, 23:10:11 - INFO - Req was made 
+15.1.2023, 23:10:12 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 23:10:12 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 23:10:34 - INFO - Req was made 
+15.1.2023, 23:10:34 - ERROR - cannot insert review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 23:10:34 - ERROR - Failed to add review | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+15.1.2023, 23:13:33 - INFO - Req was made 
+15.1.2023, 23:14:47 - INFO - Req was made 
+15.1.2023, 23:15:14 - INFO - Req was made 
+15.1.2023, 23:15:15 - INFO - Req was made 
+15.1.2023, 23:15:15 - ERROR - while finding user 63c46ce3aece21fe487b1e2b | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:15:15 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:15:41 - INFO - Req was made 
+15.1.2023, 23:15:41 - ERROR - while finding user 63c46cfdaece21fe487b1e2d | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:15:41 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:15:58 - INFO - Req was made 
+15.1.2023, 23:16:03 - INFO - Req was made 
+15.1.2023, 23:16:03 - ERROR - while finding user 63c46d13aece21fe487b1e2f | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:16:03 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:18:02 - INFO - Req was made 
+15.1.2023, 23:18:05 - INFO - Req was made 
+15.1.2023, 23:18:13 - INFO - Req was made 
+15.1.2023, 23:18:13 - DEBUG - Getting Toys 
+15.1.2023, 23:18:13 - INFO - Req was made 
+15.1.2023, 23:18:13 - DEBUG - Getting Toys 
+15.1.2023, 23:18:13 - INFO - Req was made 
+15.1.2023, 23:18:13 - DEBUG - Getting Toys 
+15.1.2023, 23:18:16 - INFO - Req was made 
+15.1.2023, 23:18:23 - INFO - Req was made 
+15.1.2023, 23:18:23 - ERROR - while finding user 63c46d9faece21fe487b1e31 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:18:23 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:19:31 - INFO - Server is running on port: 3030 
+15.1.2023, 23:19:34 - INFO - Req was made 
+15.1.2023, 23:19:35 - ERROR - while finding user 63c46de705be162c6c00fe57 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:19:35 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:19:44 - INFO - Req was made 
+15.1.2023, 23:19:48 - INFO - Req was made 
+15.1.2023, 23:19:48 - ERROR - while finding user 63c46df405be162c6c00fe59 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:19:48 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:19:58 - INFO - Server is running on port: 3030 
+15.1.2023, 23:20:02 - INFO - Req was made 
+15.1.2023, 23:20:02 - ERROR - while finding user 63c46e021d04c250faf42d36 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:20:02 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:21:14 - INFO - Server is running on port: 3030 
+15.1.2023, 23:21:17 - INFO - Req was made 
+15.1.2023, 23:21:18 - ERROR - while finding user 63c46e4daf38b327d69195de | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:21:18 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:21:33 - INFO - Server is running on port: 3030 
+15.1.2023, 23:21:35 - INFO - Req was made 
+15.1.2023, 23:21:36 - ERROR - while finding user 63c46e5ffe4e6ee3d5021a1f | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:21:36 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:22:21 - INFO - Server is running on port: 3030 
+15.1.2023, 23:22:22 - INFO - Req was made 
+15.1.2023, 23:22:23 - ERROR - while finding user 63c46e8e46155ef2a8fe5fe1 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:22:23 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:23:25 - INFO - Server is running on port: 3030 
+15.1.2023, 23:23:26 - INFO - Req was made 
+15.1.2023, 23:23:26 - ERROR - while finding user 63c46ecedbc6f51830bf3907 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:23:26 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:23:42 - INFO - Server is running on port: 3030 
+15.1.2023, 23:23:43 - INFO - Req was made 
+15.1.2023, 23:23:43 - ERROR - while finding user 63c46edfce765d4bf987709b | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:23:43 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:23:56 - INFO - Server is running on port: 3030 
+15.1.2023, 23:23:57 - INFO - Req was made 
+15.1.2023, 23:23:57 - ERROR - while finding user 63c46eed595d24616a069524 | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:23:57 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:24:15 - INFO - Server is running on port: 3030 
+15.1.2023, 23:24:16 - INFO - Req was made 
+15.1.2023, 23:24:16 - ERROR - while finding user 63c46f002e4f620d7027eebd | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:24:16 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:24:22 - INFO - Server is running on port: 3030 
+15.1.2023, 23:24:23 - INFO - Req was made 
+15.1.2023, 23:24:23 - ERROR - while finding user 63c46f075deba2408df716ed | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:24:23 - ERROR - Failed to add review | TypeError: Cannot convert undefined or null to object 
+15.1.2023, 23:24:41 - INFO - Server is running on port: 3030 
+15.1.2023, 23:24:43 - INFO - Req was made 

@@ -16,7 +16,7 @@ async function getToys(req, res) {
 
 
   try {
-    console.log('req.query.params:', req.query.params)
+    // console.log('req.query.params:', req.query.params)
     const filterByPath = req.query.params.filterBy
     logger.debug('Getting Toys')
     const filterBy = {

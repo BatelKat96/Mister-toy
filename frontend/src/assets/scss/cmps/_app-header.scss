@@ -29,5 +29,23 @@ header {
             }
         }
 
+        .user-info {
+            display: grid;
+            gap: 5px;
+            align-items: center;
+            justify-items: center;
+
+            a {
+                display: flex;
+            }
+        }
+
+        .user-img {
+            width: 50px;
+            align-self: center;
+            justify-self: end;
+            margin-inline-end: 10px;
+        }
+
     }
 }
