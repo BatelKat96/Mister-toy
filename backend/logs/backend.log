@@ -390,3 +390,211 @@
 14.1.2023, 23:01:45 - DEBUG - Getting Toys 
 14.1.2023, 23:01:45 - INFO - Req was made 
 14.1.2023, 23:01:45 - DEBUG - Getting Toys 
+15.1.2023, 9:17:44 - INFO - Server is running on port: 3030 
+15.1.2023, 9:18:40 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 9:18:40 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 9:18:42 - INFO - Req was made 
+15.1.2023, 9:18:42 - DEBUG - Getting Toys 
+15.1.2023, 9:18:42 - INFO - Req was made 
+15.1.2023, 9:18:42 - DEBUG - Getting Toys 
+15.1.2023, 9:18:43 - DEBUG - Getting Toys 
+15.1.2023, 9:18:43 - INFO - Req was made 
+15.1.2023, 9:33:02 - DEBUG - Getting Toys 
+15.1.2023, 9:33:02 - INFO - Req was made 
+15.1.2023, 9:33:02 - INFO - Req was made 
+15.1.2023, 9:33:02 - DEBUG - Getting Toys 
+15.1.2023, 9:33:02 - DEBUG - Getting Toys 
+15.1.2023, 9:33:02 - INFO - Req was made 
+15.1.2023, 15:12:21 - INFO - Server is running on port: 3030 
+15.1.2023, 15:12:51 - DEBUG - auth.service - login with username: muki 
+15.1.2023, 15:12:51 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+15.1.2023, 15:12:54 - INFO - Req was made 
+15.1.2023, 15:12:54 - DEBUG - Getting Toys 
+15.1.2023, 15:12:54 - INFO - Req was made 
+15.1.2023, 15:12:54 - DEBUG - Getting Toys 
+15.1.2023, 15:12:54 - INFO - Req was made 
+15.1.2023, 15:12:54 - DEBUG - Getting Toys 
+15.1.2023, 15:14:14 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:14:14 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:55:22 - INFO - Server is running on port: 3030 
+15.1.2023, 15:55:30 - INFO - Server is running on port: 3030 
+15.1.2023, 15:55:40 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:55:40 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:56:36 - INFO - Req was made 
+15.1.2023, 15:56:36 - DEBUG - Getting Toys 
+15.1.2023, 15:56:36 - INFO - Req was made 
+15.1.2023, 15:56:36 - DEBUG - Getting Toys 
+15.1.2023, 15:56:36 - DEBUG - Getting Toys 
+15.1.2023, 15:56:36 - INFO - Req was made 
+15.1.2023, 15:58:05 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003df | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:58:05 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:58:58 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003df | ReferenceError: loggedinUser is not defined 
+15.1.2023, 15:58:58 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:00:12 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003df | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:00:12 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:00:18 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003df | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:00:18 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:00:43 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003df | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:00:43 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:03:05 - INFO - Server is running on port: 3030 
+15.1.2023, 16:03:10 - ERROR - Failed to update toy | ReferenceError: msgcont is not defined 
+15.1.2023, 16:05:06 - ERROR - Failed to update toy | ReferenceError: msgcont is not defined 
+15.1.2023, 16:05:38 - ERROR - Failed to update toy | ReferenceError: msgcont is not defined 
+15.1.2023, 16:06:31 - ERROR - Failed to update toy | ReferenceError: msgcont is not defined 
+15.1.2023, 16:07:15 - INFO - Server is running on port: 3030 
+15.1.2023, 16:07:22 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003df | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:07:22 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:07:51 - INFO - Server is running on port: 3030 
+15.1.2023, 16:07:54 - INFO - Req was made 
+15.1.2023, 16:07:54 - DEBUG - Getting Toys 
+15.1.2023, 16:07:54 - INFO - Req was made 
+15.1.2023, 16:07:54 - DEBUG - Getting Toys 
+15.1.2023, 16:07:55 - INFO - Req was made 
+15.1.2023, 16:07:55 - DEBUG - Getting Toys 
+15.1.2023, 16:07:58 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:07:58 - ERROR - Failed to update toy | ReferenceError: loggedinUser is not defined 
+15.1.2023, 16:08:39 - INFO - Server is running on port: 3030 
+15.1.2023, 16:10:41 - INFO - Req was made 
+15.1.2023, 16:10:41 - DEBUG - Getting Toys 
+15.1.2023, 16:10:41 - INFO - Req was made 
+15.1.2023, 16:10:41 - DEBUG - Getting Toys 
+15.1.2023, 16:10:41 - INFO - Req was made 
+15.1.2023, 16:10:41 - DEBUG - Getting Toys 
+15.1.2023, 16:10:46 - INFO - Req was made 
+15.1.2023, 16:10:46 - DEBUG - Getting Toys 
+15.1.2023, 16:10:46 - INFO - Req was made 
+15.1.2023, 16:10:46 - DEBUG - Getting Toys 
+15.1.2023, 16:10:46 - DEBUG - Getting Toys 
+15.1.2023, 16:10:46 - INFO - Req was made 
+15.1.2023, 16:11:01 - INFO - Req was made 
+15.1.2023, 16:11:01 - DEBUG - Getting Toys 
+15.1.2023, 16:11:01 - INFO - Req was made 
+15.1.2023, 16:11:01 - DEBUG - Getting Toys 
+15.1.2023, 16:11:01 - INFO - Req was made 
+15.1.2023, 16:11:01 - DEBUG - Getting Toys 
+15.1.2023, 16:11:05 - INFO - Req was made 
+15.1.2023, 16:11:05 - DEBUG - Getting Toys 
+15.1.2023, 16:11:05 - INFO - Req was made 
+15.1.2023, 16:11:05 - DEBUG - Getting Toys 
+15.1.2023, 16:11:05 - DEBUG - Getting Toys 
+15.1.2023, 16:11:05 - INFO - Req was made 
+15.1.2023, 16:11:08 - INFO - Req was made 
+15.1.2023, 16:11:08 - DEBUG - Getting Toys 
+15.1.2023, 16:11:08 - INFO - Req was made 
+15.1.2023, 16:11:08 - DEBUG - Getting Toys 
+15.1.2023, 16:11:08 - INFO - Req was made 
+15.1.2023, 16:11:08 - DEBUG - Getting Toys 
+15.1.2023, 16:11:11 - INFO - Req was made 
+15.1.2023, 16:11:11 - DEBUG - Getting Toys 
+15.1.2023, 16:11:11 - DEBUG - Getting Toys 
+15.1.2023, 16:11:11 - INFO - Req was made 
+15.1.2023, 16:11:11 - INFO - Req was made 
+15.1.2023, 16:11:11 - DEBUG - Getting Toys 
+15.1.2023, 16:11:22 - INFO - Req was made 
+15.1.2023, 16:11:22 - DEBUG - Getting Toys 
+15.1.2023, 16:11:22 - INFO - Req was made 
+15.1.2023, 16:11:22 - DEBUG - Getting Toys 
+15.1.2023, 16:11:22 - INFO - Req was made 
+15.1.2023, 16:11:22 - DEBUG - Getting Toys 
+15.1.2023, 16:12:56 - INFO - Server is running on port: 3030 
+15.1.2023, 16:13:03 - INFO - Req was made 
+15.1.2023, 16:13:03 - DEBUG - Getting Toys 
+15.1.2023, 16:13:03 - INFO - Req was made 
+15.1.2023, 16:13:03 - DEBUG - Getting Toys 
+15.1.2023, 16:13:03 - INFO - Req was made 
+15.1.2023, 16:13:03 - DEBUG - Getting Toys 
+15.1.2023, 16:20:23 - INFO - Server is running on port: 3030 
+15.1.2023, 16:20:25 - INFO - Server is running on port: 3030 
+15.1.2023, 16:20:26 - INFO - Server is running on port: 3030 
+15.1.2023, 16:22:27 - INFO - Server is running on port: 3030 
+15.1.2023, 16:22:47 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 16:22:47 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 16:22:57 - DEBUG - auth.service - login with username: muki 
+15.1.2023, 16:22:57 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+15.1.2023, 16:29:17 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 16:29:17 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 16:29:26 - DEBUG - auth.service - login with username: muki 
+15.1.2023, 16:29:26 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+15.1.2023, 16:32:09 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 16:32:09 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 16:32:18 - DEBUG - auth.service - login with username: muki 
+15.1.2023, 16:32:18 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+15.1.2023, 16:34:17 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 16:34:17 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 16:34:23 - DEBUG - auth.service - login with username: muki 
+15.1.2023, 16:34:23 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+15.1.2023, 16:39:33 - INFO - Server is running on port: 3030 
+15.1.2023, 16:39:39 - ERROR - Failed to update toy | ReferenceError: toy is not defined 
+15.1.2023, 16:40:50 - INFO - Server is running on port: 3030 
+15.1.2023, 16:42:06 - INFO - Server is running on port: 3030 
+15.1.2023, 16:43:25 - INFO - Server is running on port: 3030 
+15.1.2023, 16:49:45 - INFO - Server is running on port: 3030 
+15.1.2023, 16:49:53 - INFO - Server is running on port: 3030 
+15.1.2023, 16:50:07 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 16:50:07 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 16:50:16 - DEBUG - auth.service - login with username: muki 
+15.1.2023, 16:50:16 - INFO - User login:  | {"_id":"63c16a4fe6bf3c29e32ed9d0","username":"muki","fullname":"muki","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":false} 
+15.1.2023, 16:50:30 - INFO - Server is running on port: 3030 
+15.1.2023, 16:51:38 - INFO - Server is running on port: 3030 
+15.1.2023, 16:51:51 - INFO - Server is running on port: 3030 
+15.1.2023, 16:52:31 - INFO - Server is running on port: 3030 
+15.1.2023, 16:52:37 - INFO - Server is running on port: 3030 
+15.1.2023, 16:52:42 - INFO - Server is running on port: 3030 
+15.1.2023, 16:54:04 - INFO - Server is running on port: 3030 
+15.1.2023, 16:54:23 - INFO - Server is running on port: 3030 
+15.1.2023, 16:54:24 - INFO - Req was made 
+15.1.2023, 16:54:24 - DEBUG - Getting Toys 
+15.1.2023, 16:54:24 - INFO - Req was made 
+15.1.2023, 16:54:24 - DEBUG - Getting Toys 
+15.1.2023, 16:54:25 - INFO - Req was made 
+15.1.2023, 16:54:25 - DEBUG - Getting Toys 
+15.1.2023, 16:54:45 - INFO - Server is running on port: 3030 
+15.1.2023, 16:55:32 - INFO - Server is running on port: 3030 
+15.1.2023, 17:01:58 - INFO - Server is running on port: 3030 
+15.1.2023, 17:02:00 - INFO - Req was made 
+15.1.2023, 17:02:00 - DEBUG - Getting Toys 
+15.1.2023, 17:02:00 - INFO - Req was made 
+15.1.2023, 17:02:00 - DEBUG - Getting Toys 
+15.1.2023, 17:02:00 - INFO - Req was made 
+15.1.2023, 17:02:00 - DEBUG - Getting Toys 
+15.1.2023, 17:04:44 - INFO - Server is running on port: 3030 
+15.1.2023, 17:05:28 - INFO - Server is running on port: 3030 
+15.1.2023, 17:06:20 - INFO - Server is running on port: 3030 
+15.1.2023, 17:09:17 - INFO - Server is running on port: 3030 
+15.1.2023, 17:09:30 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | Error: Not your msg! 
+15.1.2023, 17:09:30 - ERROR - Failed to remove toy msg | Error: Not your msg! 
+15.1.2023, 17:12:31 - INFO - Server is running on port: 3030 
+15.1.2023, 17:12:32 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | Error: Not your msg! 
+15.1.2023, 17:12:32 - ERROR - Failed to remove toy msg | Error: Not your msg! 
+15.1.2023, 17:14:44 - INFO - Server is running on port: 3030 
+15.1.2023, 17:15:36 - DEBUG - auth.service - login with username: Batel 
+15.1.2023, 17:15:36 - INFO - User login:  | {"_id":"63c169d949f7cefa9a611e2a","username":"Batel","fullname":"Batel kat","imgUrl":"https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png","isAdmin":true} 
+15.1.2023, 17:17:03 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | Error: Not your msg! 
+15.1.2023, 17:17:03 - ERROR - Failed to remove toy msg | Error: Not your msg! 
+15.1.2023, 17:17:23 - INFO - Server is running on port: 3030 
+15.1.2023, 17:17:24 - ERROR - cannot add toy msg 63c003f292ac69f6ee5003de | Error: Not your msg! 
+15.1.2023, 17:17:24 - ERROR - Failed to remove toy msg | Error: Not your msg! 
+15.1.2023, 17:17:29 - INFO - Server is running on port: 3030 
+15.1.2023, 17:17:46 - INFO - Server is running on port: 3030 
+15.1.2023, 17:17:51 - INFO - Server is running on port: 3030 
+15.1.2023, 17:18:08 - INFO - Server is running on port: 3030 
+15.1.2023, 17:18:13 - INFO - Server is running on port: 3030 
+15.1.2023, 17:18:36 - INFO - Server is running on port: 3030 
+15.1.2023, 17:21:12 - INFO - Req was made 
+15.1.2023, 17:21:12 - DEBUG - Getting Toys 
+15.1.2023, 17:21:12 - DEBUG - Getting Toys 
+15.1.2023, 17:21:12 - INFO - Req was made 
+15.1.2023, 17:21:13 - INFO - Req was made 
+15.1.2023, 17:21:13 - DEBUG - Getting Toys 
+15.1.2023, 17:21:19 - INFO - Req was made 
+15.1.2023, 17:21:19 - DEBUG - Getting Toys 
+15.1.2023, 17:21:19 - INFO - Req was made 
+15.1.2023, 17:21:19 - DEBUG - Getting Toys 
+15.1.2023, 17:21:19 - INFO - Req was made 
+15.1.2023, 17:21:19 - DEBUG - Getting Toys 
+15.1.2023, 17:21:44 - INFO - Req was made 
+15.1.2023, 17:21:44 - DEBUG - Getting Toys 
+15.1.2023, 17:21:44 - INFO - Req was made 
+15.1.2023, 17:21:44 - DEBUG - Getting Toys 
+15.1.2023, 17:21:44 - INFO - Req was made 
+15.1.2023, 17:21:44 - DEBUG - Getting Toys 

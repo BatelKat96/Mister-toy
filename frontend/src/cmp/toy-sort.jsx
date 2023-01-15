@@ -26,15 +26,6 @@ export function ToySort({ onSetSort }) {
         <h4>Toy Sort</h4>
         <div className='sort-section'>
 
-            <label htmlFor='desc'>Descending:
-                <input
-                    name='desc'
-                    id='desc'
-                    type='checkbox'
-                    value={sortByToEdit.desc}
-                    onChange={handleSortChange}
-                />
-            </label>
             <select
                 name='sortByCat'
                 value={sortByToEdit.sortByCat}
@@ -45,6 +36,15 @@ export function ToySort({ onSetSort }) {
                 <option value='price'>Price</option>
                 <option value='createdAt'>CreatedAt</option>
             </select>
+            <label htmlFor='desc'>Descending:
+                <input
+                    name='desc'
+                    id='desc'
+                    type='checkbox'
+                    value={sortByToEdit.desc}
+                    onChange={handleSortChange}
+                />
+            </label>
         </div>
     </section>
 }

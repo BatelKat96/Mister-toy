@@ -2,6 +2,16 @@ const toyService = require('./toy.service.js')
 
 const logger = require('../../services/logger.service')
 
+module.exports = {
+  getToys,
+  getToyById,
+  addToy,
+  updateToy,
+  removeToy,
+  addToyMsg,
+  removeToyMsg
+}
+
 async function getToys(req, res) {
   const filterByPath = req.query.params.filterBy
 
@@ -12,8 +22,6 @@ async function getToys(req, res) {
       maxPrice: +filterByPath.maxPrice,
       inStock: filterByPath.inStock
     }
-    // console.log('filterBy controller:', filterBy)
-
     const toys = await toyService.query(filterBy)
     res.json(toys)
   } catch (err) {
@@ -35,9 +43,8 @@ async function getToyById(req, res) {
 
 async function addToy(req, res) {
   const { loggedinUser } = req
-  console.log('loggedinUser:', loggedinUser)
-  console.log('req.body:', req.body)
-
+  // console.log('loggedinUser:', loggedinUser)
+  // console.log('req.body:', req.body)
 
   try {
     const toy = req.body
@@ -49,7 +56,6 @@ async function addToy(req, res) {
     res.status(500).send({ err: 'Failed to add toy' })
   }
 }
-
 
 async function updateToy(req, res) {
   try {
@@ -75,49 +81,33 @@ async function removeToy(req, res) {
 }
 
 async function addToyMsg(req, res) {
-  console.log('req:', req.body.txt)
-  console.log('req:', req.body)
-
-
   const { loggedinUser } = req
   try {
     const toyId = req.params.id
-    const msg = {
-      txt: req.body.toyMsg,
-      by: loggedinUser
-    }
-    const savedMsg = await toyService.addToyMsg(toyId, msg)
-    console.log('savedMsggg:', savedMsg)
+    const { msg } = req.body
 
+    console.log('msgcont:', msg)
+
+    const savedMsg = await toyService.addToyMsg(toyId, msg, loggedinUser)
     res.json(savedMsg)
   } catch (err) {
-    logger.error('Failed to update car', err)
-    res.status(500).send({ err: 'Failed to update car' })
+    logger.error('Failed to update toy', err)
+    res.status(500).send({ err: 'Failed to update toy' })
 
   }
 }
 
-// async function removeCarMsg(req, res) {
-//   const {loggedinUser} = req
-//   try {
-//     const carId = req.params.id
-//     const {msgId} = req.params
+async function removeToyMsg(req, res) {
+  const { loggedinUser } = req
+  try {
+    const toyId = req.params.id
+    const { msgId } = req.params
 
-//     const removedId = await carService.removeCarMsg(carId, msgId)
-//     res.send(removedId)
-//   } catch (err) {
-//     logger.error('Failed to remove car msg', err)
-//     res.status(500).send({ err: 'Failed to remove car msg' })
+    const removedId = await toyService.removetoyMsg(toyId, msgId, loggedinUser)
+    res.send(removedId)
+  } catch (err) {
+    logger.error('Failed to remove toy msg', err)
+    res.status(500).send({ err: 'Failed to remove toy msg' })
 
-//   }
-// }
-
-module.exports = {
-  getToys,
-  getToyById,
-  addToy,
-  updateToy,
-  removeToy,
-  addToyMsg
-  // removeToyMsg
+  }
 }

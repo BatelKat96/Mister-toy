@@ -16,21 +16,20 @@ export const toyService = {
     getDefaultFilter,
     getDefaultSort,
     getEmptyToy,
-    addToyMsg
+    addMsgToToy,
+    getEmptyMsg,
+    removeToyMsg
 }
 
 async function query(filterBy) {
     // const queryParams = `?txt=${filterBy.txt}&maxPrice=${filterBy.maxPrice}&inStock=${filterBy.inStock}&sortByCat=${sortBy.sortByCat}&desc=${sortBy.desc}`
     // return httpService.get(BASE_URL + queryParams)
     console.log('filterBy from fr:', filterBy)
-
     return httpService.get('toy', { params: { filterBy } })
-
 }
 
 async function remove(toyId) {
     console.log('toyId from service fr:', toyId)
-
     return httpService.delete(`toy/${toyId}`)
 }
 
@@ -54,7 +53,7 @@ async function save(toy) {
 
 
 function getEmptyToy(toyName, price, labels, inStock = true) {
-    return { toyName, price, labels, inStock }
+    return { toyName, price, labels, inStock, msg: [] }
 }
 
 function getDefaultFilter() {
@@ -65,29 +64,31 @@ function getDefaultSort() {
     return { sortByCat: '', desc: 1 }
 }
 
-async function addToyMsg(toyId, txt) {
-    // console.log('txt:', txt.toyMsg)
-    const { toyMsg } = txt
-    console.log('toyMsg:', toyMsg)
-
-    // Later, this is all done by the backend
-    const toy = await getById(toyId)
-    if (!toy.msgs) toy.msgs = []
-
-    const msg = {
-        _id: utilService.makeId(),
-        by: userService.getLoggedinUser(),
-        txt: toyMsg
+function getEmptyMsg() {
+    return {
+        id: utilService.makeId(),
+        txt: ''
     }
-    toy.msgs.push(msg)
-    console.log('toy:', toy)
-    console.log('toyMsgss:', toyMsg)
-
-    const savedMsg = await httpService.post(`toy/${toyId}/msg`, { toyMsg })
-    console.log('savedMsg:', savedMsg)
-
-    return savedMsg
 }
+
+async function addMsgToToy(toyId, msg) {
+    try {
+        console.log('msg:', msg)
+        const savedMsg = await httpService.post(`toy/${toyId}/msg`, { msg })
+        console.log('savedMsg from toy sre:', savedMsg)
+        return savedMsg
+    } catch (err) {
+        console.log('Cannot add msg to toy:', err)
+    }
+}
+
+
+async function removeToyMsg(toyId, msgId) {
+    await httpService.delete(`toy/${toyId}/msg/${msgId}`)
+
+}
+
+
 
 // function _createToys() {
 //     let toys = utilService.loadFromStorage(STORAGE_TOYS_KEY)
