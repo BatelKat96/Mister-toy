@@ -13,6 +13,8 @@ module.exports = {
 }
 
 async function getToys(req, res) {
+  console.log('req.query.params:', req.query.params)
+
   const filterByPath = req.query.params.filterBy
 
   try {

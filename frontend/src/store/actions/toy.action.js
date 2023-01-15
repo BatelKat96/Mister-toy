@@ -19,7 +19,7 @@ export async function loadToys(filterBy, sortBy) {
         return toys
     }
     catch (err) {
-        console.log('Had issues loading cars', err)
+        console.log('Had issues loading toys', err)
         throw err
     }
     finally {
