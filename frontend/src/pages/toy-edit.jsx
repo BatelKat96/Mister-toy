@@ -16,12 +16,10 @@ export function ToyEdit() {
 
             try {
                 const toy = await toyService.getById(toyId)
-                console.log('kdjk')
                 setToy(toy)
             }
             catch (err) {
                 showErrorMsg('Cannot load toy')
-                console.log('no:')
                 navigate('/toy')
             }
         }
@@ -47,8 +45,6 @@ export function ToyEdit() {
         ev.preventDefault()
         try {
             const savedToy = await saveToy(toy)
-            console.log('savedToy add after action:', savedToy)
-
             showSuccessMsg((!toyId) ? 'Toy added' : `Toy edited (id: ${savedToy._id})`)
             navigate('/toy')
         } catch (err) {

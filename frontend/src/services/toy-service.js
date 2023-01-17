@@ -23,14 +23,10 @@ export const toyService = {
 }
 
 async function query(filterBy) {
-    // const queryParams = `?txt=${filterBy.txt}&maxPrice=${filterBy.maxPrice}&inStock=${filterBy.inStock}&sortByCat=${sortBy.sortByCat}&desc=${sortBy.desc}`
-    // return httpService.get(BASE_URL + queryParams)
-    console.log('filterBy from fr:', filterBy)
     return httpService.get('toy', { params: { filterBy } })
 }
 
 async function remove(toyId) {
-    console.log('toyId from service fr:', toyId)
     return httpService.delete(`toy/${toyId}`)
 }
 
@@ -40,8 +36,6 @@ function getById(toyId) {
 }
 
 async function save(toy) {
-    console.log('toy from toy serv fe:', toy)
-
     let savedToy
     if (toy._id) {
         savedToy = await httpService.put(`toy/${toy._id}`, toy)
@@ -80,9 +74,7 @@ function getEmptyReview() {
 
 async function addMsgToToy(toyId, msg) {
     try {
-        console.log('msg:', msg)
         const savedMsg = await httpService.post(`toy/${toyId}/msg`, { msg })
-        console.log('savedMsg from toy sre:', savedMsg)
         return savedMsg
     } catch (err) {
         console.log('Cannot add msg to toy:', err)

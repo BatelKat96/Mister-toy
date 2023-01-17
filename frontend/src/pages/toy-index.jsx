@@ -35,7 +35,6 @@ export function ToyIndex() {
     }
 
     function onSetSort(sort) {
-        console.log('sort from index:', sort)
         setSort(sort)
     }
 

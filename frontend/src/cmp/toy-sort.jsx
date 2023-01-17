@@ -13,13 +13,9 @@ export function ToySort({ onSetSort }) {
 
     function handleSortChange({ target }) {
         let { value, name: field, type } = target
-        console.log('value:', value)
-        console.log('field:', field)
 
         value = type === 'checkbox' ? (target.checked ? -1 : 1) : value
         setSortByToEdit((prevSort) => ({ ...prevSort, [field]: value }))
-        console.log('sortByToEdit:', sortByToEdit)
-
     }
 
     return <section className='sort-main-section'>

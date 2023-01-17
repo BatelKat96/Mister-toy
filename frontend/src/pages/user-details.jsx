@@ -10,16 +10,20 @@ import { UserReview, UserReviewList } from '../cmp/user-review-list'
 import { loadUser } from '../store/actions/user.action'
 
 export function UserDetails() {
-  // const params = useParams()
+  const reviews = useSelector(storeState => storeState.reviewModule.reviews)
+
   const { userId } = useParams()
   const user = useSelector(storeState => storeState.userModule.watchedUser)
 
   useEffect(() => {
     loadUser(userId)
+    getUserReviews()
   }, [])
 
-  // console.log('params.i:', params.id)
-  console.log('userId:', userId)
+  function getUserReviews() {
+    return reviews.filter(review => review.byUser._id === userId)
+  }
+
 
   return <section className="user-details">
     <h1>User Details</h1>
@@ -34,7 +38,7 @@ export function UserDetails() {
 
       <hr />
       <div className='show-review-section'>
-        {(!user.reviews) ? <h3>No reviews yet</h3> : <UserReviewList reviews={user.reviews} />}
+        {(!reviews.length) ? <h3>No reviews yet</h3> : <UserReviewList reviews={reviews} />}
       </div>
 
 

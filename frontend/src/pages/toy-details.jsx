@@ -1,16 +1,21 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ReviewApp } from '../cmp/review-app'
+import { ReviewForm } from '../cmp/review-form'
+import { ToyChat } from '../cmp/toy-chat'
 import { ToyMsgs } from '../cmp/toy-msg'
+import { ToyReviews } from '../cmp/toy-reviews'
 import { showErrorMsg, showSuccessMsg } from '../services/event-bus.service'
 import { toyService } from '../services/toy-service'
 import { utilService } from '../services/util.service'
+import { addReview } from '../store/actions/review.actions'
 
 
 export function ToysDetails() {
 
     const [toy, setToy] = useState(null)
     const [msg, setMsg] = useState(toyService.getEmptyMsg())
+    const [review, setReview] = useState({ txt: '' })
     const { toyId } = useParams()
     const navigate = useNavigate()
 
@@ -30,6 +35,15 @@ export function ToysDetails() {
         }
     }
 
+    async function addToyReview() {
+        try {
+            await addReview({ ...review, aboutToyId: toy._id })
+            showSuccessMsg('Review added')
+            setReview({ txt: '' })
+        } catch (err) {
+            showErrorMsg('Cannot add review')
+        }
+    }
 
     function handleChange({ target }) {
         let { value, name: field } = target
@@ -39,11 +53,7 @@ export function ToysDetails() {
     async function onAddToyMsg(ev) {
         ev.preventDefault()
         try {
-            console.log('msg de:', msg)
-
             const savedMsg = await toyService.addMsgToToy(toyId, msg)
-            console.log('savedMsg de:', savedMsg)
-
             setToy((prevToy) => ({ ...prevToy, msgs: [...prevToy.msgs, savedMsg] }))
             setMsg(toyService.getEmptyMsg())
             showSuccessMsg('Msg saved!')
@@ -106,7 +116,10 @@ export function ToysDetails() {
         <div className='show-msg-section'>
             {(!toy.msgs) ? <h3>No msgs yet</h3> : <ToyMsgs toy={toy} onRemoveMsg={onRemoveMsg} />}
         </div>
-        <ReviewApp toy={toy} />
+        <ToyChat toy={toy} />
+        <ReviewForm review={review} setReview={setReview} addToyReview={addToyReview} />
+        <ToyReviews toy={toy} />
+
         <div className='btn-back'>
             <Link to="/toy" className="btn">Back to List</Link>
         </div>

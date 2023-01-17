@@ -29,11 +29,6 @@ export function Dashboard() {
         return chartsData
     }
 
-    //   const amountData = getLabelsAmount()
-    //   console.log('amountData:', amountData)
-    //   const priceData = getLabelsPrice()
-    //   console.log('priceData:', priceData)
-
     const { toysPriceMap, labelsCountMap } = getChartsData()
 
     return (

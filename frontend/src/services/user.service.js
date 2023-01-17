@@ -38,13 +38,8 @@ async function login(userCred) {
 }
 
 async function signup(userCred) {
-    console.log('userCred:', userCred)
-
     if (!userCred.imgUrl) userCred.imgUrl = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'
-
     const user = await httpService.post('auth/signup', userCred)
-    console.log('userVVVV:', user)
-
     return saveLocalUser(user)
 }
 

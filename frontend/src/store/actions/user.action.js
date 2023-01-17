@@ -52,11 +52,7 @@ export async function loadUsers() {
 
 export async function loadUser(userId) {
     try {
-        console.log('userId from acrion:', userId)
-
         const user = await userService.getById(userId);
-        console.log('user from acrion:', user)
-
         store.dispatch({ type: 'SET_WATCHED_USER', user })
     } catch (err) {
         // showErrorMsg('Cannot load user')

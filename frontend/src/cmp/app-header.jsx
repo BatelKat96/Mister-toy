@@ -8,7 +8,7 @@ import { LoginSignup } from './login-signup';
 
 export function AppHeader() {
     const user = useSelector((storeState => storeState.userModule.user))
-    console.log('user:', user)
+    // console.log('user:', user)
 
     const dispatch = useDispatch()
 
@@ -30,7 +30,7 @@ export function AppHeader() {
             <nav>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
-                <NavLink to="/toy">Toy</NavLink>
+                <NavLink to="/toy">Toys</NavLink>
                 <NavLink to="/dashboard">Dashboard</NavLink>
             </nav>
             <Link to="/">

@@ -21,10 +21,8 @@ async function remove(reviewId) {
     await httpService.delete(`review/${reviewId}`)
 }
 
-async function add({ txt }) {
-    console.log('txt:', txt)
-
-    const addedReview = await httpService.post(`review`, { txt })
+async function add({ txt, aboutToyId }) {
+    const addedReview = await httpService.post(`review`, { txt, aboutToyId })
 
     // const aboutUser = await userService.getById(aboutUserId)
 

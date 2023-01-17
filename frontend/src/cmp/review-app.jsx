@@ -31,7 +31,7 @@ export function ReviewApp({ toy }) {
     ev.preventDefault()
     try {
       const savedReview = await addReview(reviewToEdit)
-      console.log('savedReview:', savedReview)
+      // console.log('savedReview:', savedReview)
       // setToy((prevToy) => ({ ...prevToy, msgs: [...prevToy.msgs, savedMsg] }))
       setReviewToEdit(toyService.getEmptyReview())
       showSuccessMsg('Review added')
@@ -53,7 +53,6 @@ export function ReviewApp({ toy }) {
     return review.byUser._id === loggedInUser?._id || loggedInUser?.isAdmin
   }
 
-  console.log('loggedInUser:', loggedInUser)
 
   return (
     <div className="review-app">

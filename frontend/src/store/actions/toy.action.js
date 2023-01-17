@@ -42,13 +42,9 @@ export async function removeToy(toyId) {
 
 
 export async function saveToy(toy) {
-    console.log('toy from toy action:', toy)
-
     const type = (toy._id) ? UPDATE_TOY : ADD_TOY
     try {
         const savedToy = await toyService.save(toy)
-        console.log('savedToy from try action:', savedToy)
-
         store.dispatch({ type, toy: savedToy })
         return savedToy
     } catch (err) {
@@ -63,6 +59,5 @@ export async function setFilter(filter) {
 }
 
 export async function setSort(sort) {
-    // console.log('sortxxx:', sort)
     store.dispatch({ type: SET_SORT, sort })
 }

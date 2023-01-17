@@ -28,7 +28,7 @@ function query(filterBy, sortBy) {
 }
 
 function remove(toyId) {
-    console.log('toyId from service fr:', toyId)
+    // console.log('toyId from service fr:', toyId)
 
     return httpService.delete(`toy/${toyId}`)
 }
